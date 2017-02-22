@@ -1,0 +1,74 @@
+/////////////////////////////////////////////////// /////////////////////////////
+// Code formatting for the online assembler is strict:
+// - Follow all guidelines in the Project 4 specification.
+// - The first two characters of a comment line must be //
+// - Lines with instructions on them should not have comments.
+// - Do not leave any empty lines in your program code.  
+////////////////////////////////////////////////////////////////////////////////
+// Assignment:   ECE 2504 Project 4 
+// Author:       <Your Name>
+// Instructor:   <Your Instructor's Name>
+// Date:         <Date of Creation>
+// Last Revised: <Date of Last Revision>
+//
+// Revision History
+// <Use this space to keep track of your code revisions>
+////////////////////////////////////////////////////////////////////////////////
+// Section: Branch To Main
+// DO NOT CHANGE ANY OF THE CODE IN THE "BRANCH TO MAIN" SECTION.
+//
+// This code is responsible for skipping over the Validation section of the code
+// and "starting" the program with the code that you have generated to solve the
+// design problem presented in the specification.
+////////////////////////////////////////////////////////////////////////////////
+ldi r0, 6
+adi r0, r0, 6
+jmp r0   
+////////////////////////////////////////////////////////////////////////////////
+// Section: Validation
+// DO NOT CHANGE ANY OF THE CODE IN THE "VALIDATION" SECTION.
+//
+// These instructions load the final values of your program's output variables
+// (Data Memory addresses 0x8-0xA) into registers r1-r3 so that we can see them
+// on the LEDs
+//
+// Your code must jump to this point after it has stored the results in data
+// memory. JUMP TO LOCATION 3.
+////////////////////////////////////////////////////////////////////////////////
+// Set r0 = 0x8.
+// Load the maximum value (stored in Data Memory address 0x8) into r1.
+//
+ldi r0, 4
+shl r0, r0
+ld r1, r0
+//
+// Increment r0 to 0x9.
+// Load the minimum value (stored in Data Memory address 0x9) into r2.
+//
+inc r0, r0
+ld r2, r0
+//
+// Increment r0 to 0xA.
+// Load the average value (stored in Data Memory address 0xA) into r3.
+//
+inc r0, r0
+ld r3, r0
+//
+// Set r0 = 0.
+// The address of the brz is the terminal address of the code: Address 0xB.
+// The branch if zero branches to itself if r0 = 0, which will always be true.
+//
+ldi r0, 0
+brz r0, 0  
+////////////////////////////////////////////////////////////////////////////////
+// Section: USER CODE
+// ADD YOUR CODE STARTING HERE.
+// THE LAST INSTRUCTION MUST BE A JUMP TO INSTRUCTION MEMORY ADDRESS 3.
+// This allows the program to execute the code in the "Validation" section.
+////////////////////////////////////////////////////////////////////////////////
+ldi r0, 4
+
+
+// Last memory jump
+ldi r0, 3
+jmp r0

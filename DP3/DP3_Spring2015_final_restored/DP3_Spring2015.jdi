@@ -1,0 +1,203 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="55ba6ab0774a90cc742f"/>
+  </project>
+  <file_info>
+    <file device="EP4CE22F17C6" path="DP3_Spring2015.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <hub_info hub_ir_width="4" ir_width="4" node_addr_width="1" node_count="1"/>
+  <node_info>
+    <node hpath="dp3_probe:debug|altsource_probe:altsource_probe_component" instance_id="0" mfg_id="110" node_id="9" sld_node_info="0x486E00" version="0">
+      <parameters>
+        <parameter name="lpm_type" type="string" value="altsource_probe"/>
+        <parameter name="lpm_hint" type="string" value="UNUSED"/>
+        <parameter name="sld_auto_instance_index" type="string" value="NO"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="4746752"/>
+        <parameter name="sld_ir_width" type="dec" value="4"/>
+        <parameter name="instance_id" type="string" value="2504"/>
+        <parameter name="probe_width" type="dec" value="144"/>
+        <parameter name="source_width" type="dec" value="8"/>
+        <parameter name="source_initial_value" type="string" value=" 0"/>
+        <parameter name="enable_metastability" type="string" value="NO"/>
+      </parameters>
+      <inputs>
+        <port name="probe[0]" source="dp3_probe:debug|probe[0]"/>
+        <port name="probe[1]" source="dp3_probe:debug|probe[1]"/>
+        <port name="probe[2]" source="dp3_probe:debug|probe[2]"/>
+        <port name="probe[3]" source="dp3_probe:debug|probe[3]"/>
+        <port name="probe[4]" source="dp3_probe:debug|probe[4]"/>
+        <port name="probe[5]" source="dp3_probe:debug|probe[5]"/>
+        <port name="probe[6]" source="dp3_probe:debug|probe[6]"/>
+        <port name="probe[7]" source="dp3_probe:debug|probe[7]"/>
+        <port name="probe[8]" source="dp3_probe:debug|probe[8]"/>
+        <port name="probe[9]" source="dp3_probe:debug|probe[9]"/>
+        <port name="probe[10]" source="dp3_probe:debug|probe[10]"/>
+        <port name="probe[11]" source="dp3_probe:debug|probe[11]"/>
+        <port name="probe[12]" source="dp3_probe:debug|probe[12]"/>
+        <port name="probe[13]" source="dp3_probe:debug|probe[13]"/>
+        <port name="probe[14]" source="dp3_probe:debug|probe[14]"/>
+        <port name="probe[15]" source="dp3_probe:debug|probe[15]"/>
+        <port name="probe[16]" source="dp3_probe:debug|probe[16]"/>
+        <port name="probe[17]" source="dp3_probe:debug|probe[17]"/>
+        <port name="probe[18]" source="dp3_probe:debug|probe[18]"/>
+        <port name="probe[19]" source="dp3_probe:debug|probe[19]"/>
+        <port name="probe[20]" source="dp3_probe:debug|probe[20]"/>
+        <port name="probe[21]" source="dp3_probe:debug|probe[21]"/>
+        <port name="probe[22]" source="dp3_probe:debug|probe[22]"/>
+        <port name="probe[23]" source="dp3_probe:debug|probe[23]"/>
+        <port name="probe[24]" source="dp3_probe:debug|probe[24]"/>
+        <port name="probe[25]" source="dp3_probe:debug|probe[25]"/>
+        <port name="probe[26]" source="dp3_probe:debug|probe[26]"/>
+        <port name="probe[27]" source="dp3_probe:debug|probe[27]"/>
+        <port name="probe[28]" source="dp3_probe:debug|probe[28]"/>
+        <port name="probe[29]" source="dp3_probe:debug|probe[29]"/>
+        <port name="probe[30]" source="dp3_probe:debug|probe[30]"/>
+        <port name="probe[31]" source="dp3_probe:debug|probe[31]"/>
+        <port name="probe[32]" source="dp3_probe:debug|probe[32]"/>
+        <port name="probe[33]" source="dp3_probe:debug|probe[33]"/>
+        <port name="probe[34]" source="dp3_probe:debug|probe[34]"/>
+        <port name="probe[35]" source="dp3_probe:debug|probe[35]"/>
+        <port name="probe[36]" source="dp3_probe:debug|probe[36]"/>
+        <port name="probe[37]" source="dp3_probe:debug|probe[37]"/>
+        <port name="probe[38]" source="dp3_probe:debug|probe[38]"/>
+        <port name="probe[39]" source="dp3_probe:debug|probe[39]"/>
+        <port name="probe[40]" source="dp3_probe:debug|probe[40]"/>
+        <port name="probe[41]" source="dp3_probe:debug|probe[41]"/>
+        <port name="probe[42]" source="dp3_probe:debug|probe[42]"/>
+        <port name="probe[43]" source="dp3_probe:debug|probe[43]"/>
+        <port name="probe[44]" source="dp3_probe:debug|probe[44]"/>
+        <port name="probe[45]" source="dp3_probe:debug|probe[45]"/>
+        <port name="probe[46]" source="dp3_probe:debug|probe[46]"/>
+        <port name="probe[47]" source="dp3_probe:debug|probe[47]"/>
+        <port name="probe[48]" source="dp3_probe:debug|probe[48]"/>
+        <port name="probe[49]" source="dp3_probe:debug|probe[49]"/>
+        <port name="probe[50]" source="dp3_probe:debug|probe[50]"/>
+        <port name="probe[51]" source="dp3_probe:debug|probe[51]"/>
+        <port name="probe[52]" source="dp3_probe:debug|probe[52]"/>
+        <port name="probe[53]" source="dp3_probe:debug|probe[53]"/>
+        <port name="probe[54]" source="dp3_probe:debug|probe[54]"/>
+        <port name="probe[55]" source="dp3_probe:debug|probe[55]"/>
+        <port name="probe[56]" source="dp3_probe:debug|probe[56]"/>
+        <port name="probe[57]" source="dp3_probe:debug|probe[57]"/>
+        <port name="probe[58]" source="dp3_probe:debug|probe[58]"/>
+        <port name="probe[59]" source="dp3_probe:debug|probe[59]"/>
+        <port name="probe[60]" source="dp3_probe:debug|probe[60]"/>
+        <port name="probe[61]" source="dp3_probe:debug|probe[61]"/>
+        <port name="probe[62]" source="dp3_probe:debug|probe[62]"/>
+        <port name="probe[63]" source="dp3_probe:debug|probe[63]"/>
+        <port name="probe[64]" source="dp3_probe:debug|probe[64]"/>
+        <port name="probe[65]" source="dp3_probe:debug|probe[65]"/>
+        <port name="probe[66]" source="dp3_probe:debug|probe[66]"/>
+        <port name="probe[67]" source="dp3_probe:debug|probe[67]"/>
+        <port name="probe[68]" source="dp3_probe:debug|probe[68]"/>
+        <port name="probe[69]" source="dp3_probe:debug|probe[69]"/>
+        <port name="probe[70]" source="dp3_probe:debug|probe[70]"/>
+        <port name="probe[71]" source="dp3_probe:debug|probe[71]"/>
+        <port name="probe[72]" source="dp3_probe:debug|probe[72]"/>
+        <port name="probe[73]" source="dp3_probe:debug|probe[73]"/>
+        <port name="probe[74]" source="dp3_probe:debug|probe[74]"/>
+        <port name="probe[75]" source="dp3_probe:debug|probe[75]"/>
+        <port name="probe[76]" source="dp3_probe:debug|probe[76]"/>
+        <port name="probe[77]" source="dp3_probe:debug|probe[77]"/>
+        <port name="probe[78]" source="dp3_probe:debug|probe[78]"/>
+        <port name="probe[79]" source="dp3_probe:debug|probe[79]"/>
+        <port name="probe[80]" source="dp3_probe:debug|probe[80]"/>
+        <port name="probe[81]" source="dp3_probe:debug|probe[81]"/>
+        <port name="probe[82]" source="dp3_probe:debug|probe[82]"/>
+        <port name="probe[83]" source="dp3_probe:debug|probe[83]"/>
+        <port name="probe[84]" source="dp3_probe:debug|probe[84]"/>
+        <port name="probe[85]" source="dp3_probe:debug|probe[85]"/>
+        <port name="probe[86]" source="dp3_probe:debug|probe[86]"/>
+        <port name="probe[87]" source="dp3_probe:debug|probe[87]"/>
+        <port name="probe[88]" source="dp3_probe:debug|probe[88]"/>
+        <port name="probe[89]" source="dp3_probe:debug|probe[89]"/>
+        <port name="probe[90]" source="dp3_probe:debug|probe[90]"/>
+        <port name="probe[91]" source="dp3_probe:debug|probe[91]"/>
+        <port name="probe[92]" source="dp3_probe:debug|probe[92]"/>
+        <port name="probe[93]" source="dp3_probe:debug|probe[93]"/>
+        <port name="probe[94]" source="dp3_probe:debug|probe[94]"/>
+        <port name="probe[95]" source="dp3_probe:debug|probe[95]"/>
+        <port name="probe[96]" source="dp3_probe:debug|probe[96]"/>
+        <port name="probe[97]" source="dp3_probe:debug|probe[97]"/>
+        <port name="probe[98]" source="dp3_probe:debug|probe[98]"/>
+        <port name="probe[99]" source="dp3_probe:debug|probe[99]"/>
+        <port name="probe[100]" source="dp3_probe:debug|probe[100]"/>
+        <port name="probe[101]" source="dp3_probe:debug|probe[101]"/>
+        <port name="probe[102]" source="dp3_probe:debug|probe[102]"/>
+        <port name="probe[103]" source="dp3_probe:debug|probe[103]"/>
+        <port name="probe[104]" source="dp3_probe:debug|probe[104]"/>
+        <port name="probe[105]" source="dp3_probe:debug|probe[105]"/>
+        <port name="probe[106]" source="dp3_probe:debug|probe[106]"/>
+        <port name="probe[107]" source="dp3_probe:debug|probe[107]"/>
+        <port name="probe[108]" source="dp3_probe:debug|probe[108]"/>
+        <port name="probe[109]" source="dp3_probe:debug|probe[109]"/>
+        <port name="probe[110]" source="dp3_probe:debug|probe[110]"/>
+        <port name="probe[111]" source="dp3_probe:debug|probe[111]"/>
+        <port name="probe[112]" source="dp3_probe:debug|probe[112]"/>
+        <port name="probe[113]" source="dp3_probe:debug|probe[113]"/>
+        <port name="probe[114]" source="dp3_probe:debug|probe[114]"/>
+        <port name="probe[115]" source="dp3_probe:debug|probe[115]"/>
+        <port name="probe[116]" source="dp3_probe:debug|probe[116]"/>
+        <port name="probe[117]" source="dp3_probe:debug|probe[117]"/>
+        <port name="probe[118]" source="dp3_probe:debug|probe[118]"/>
+        <port name="probe[119]" source="dp3_probe:debug|probe[119]"/>
+        <port name="probe[120]" source="dp3_probe:debug|probe[120]"/>
+        <port name="probe[121]" source="dp3_probe:debug|probe[121]"/>
+        <port name="probe[122]" source="dp3_probe:debug|probe[122]"/>
+        <port name="probe[123]" source="dp3_probe:debug|probe[123]"/>
+        <port name="probe[124]" source="dp3_probe:debug|probe[124]"/>
+        <port name="probe[125]" source="dp3_probe:debug|probe[125]"/>
+        <port name="probe[126]" source="dp3_probe:debug|probe[126]"/>
+        <port name="probe[127]" source="dp3_probe:debug|probe[127]"/>
+        <port name="probe[128]" source="dp3_probe:debug|probe[128]"/>
+        <port name="probe[129]" source="dp3_probe:debug|probe[129]"/>
+        <port name="probe[130]" source="dp3_probe:debug|probe[130]"/>
+        <port name="probe[131]" source="dp3_probe:debug|probe[131]"/>
+        <port name="probe[132]" source="dp3_probe:debug|probe[132]"/>
+        <port name="probe[133]" source="dp3_probe:debug|probe[133]"/>
+        <port name="probe[134]" source="dp3_probe:debug|probe[134]"/>
+        <port name="probe[135]" source="dp3_probe:debug|probe[135]"/>
+        <port name="probe[136]" source="dp3_probe:debug|probe[136]"/>
+        <port name="probe[137]" source="dp3_probe:debug|probe[137]"/>
+        <port name="probe[138]" source="dp3_probe:debug|probe[138]"/>
+        <port name="probe[139]" source="dp3_probe:debug|probe[139]"/>
+        <port name="probe[140]" source="dp3_probe:debug|probe[140]"/>
+        <port name="probe[141]" source="dp3_probe:debug|probe[141]"/>
+        <port name="probe[142]" source="dp3_probe:debug|probe[142]"/>
+        <port name="probe[143]" source="dp3_probe:debug|probe[143]"/>
+        <port name="jtag.bp.debug_altsource_probe_component_raw_tck" source="jtag.bp.debug_altsource_probe_component_raw_tck"/>
+        <port name="jtag.bp.debug_altsource_probe_component_tdi" source="jtag.bp.debug_altsource_probe_component_tdi"/>
+        <port name="jtag.bp.debug_altsource_probe_component_usr1" source="jtag.bp.debug_altsource_probe_component_usr1"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_cdr" source="jtag.bp.debug_altsource_probe_component_jtag_state_cdr"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_sdr" source="jtag.bp.debug_altsource_probe_component_jtag_state_sdr"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_e1dr" source="jtag.bp.debug_altsource_probe_component_jtag_state_e1dr"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_udr" source="jtag.bp.debug_altsource_probe_component_jtag_state_udr"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_cir" source="jtag.bp.debug_altsource_probe_component_jtag_state_cir"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_uir" source="jtag.bp.debug_altsource_probe_component_jtag_state_uir"/>
+        <port name="jtag.bp.debug_altsource_probe_component_jtag_state_tlr" source="jtag.bp.debug_altsource_probe_component_jtag_state_tlr"/>
+        <port name="jtag.bp.debug_altsource_probe_component_clrn" source="jtag.bp.debug_altsource_probe_component_clrn"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ena" source="jtag.bp.debug_altsource_probe_component_ena"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_in_0_" source="jtag.bp.debug_altsource_probe_component_ir_in_0_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_in_1_" source="jtag.bp.debug_altsource_probe_component_ir_in_1_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_in_2_" source="jtag.bp.debug_altsource_probe_component_ir_in_2_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_in_3_" source="jtag.bp.debug_altsource_probe_component_ir_in_3_"/>
+      </inputs>
+      <outputs>
+        <port name="source[0]"/>
+        <port name="source[1]"/>
+        <port name="source[2]"/>
+        <port name="source[3]"/>
+        <port name="source[4]"/>
+        <port name="source[5]"/>
+        <port name="source[6]"/>
+        <port name="source[7]"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_out_0_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_out_1_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_out_2_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_ir_out_3_"/>
+        <port name="jtag.bp.debug_altsource_probe_component_tdo"/>
+      </outputs>
+    </node>
+  </node_info>
+</sld_project_info>

@@ -1,0 +1,97 @@
+Restore Archived Project report for DP3_Spring2015
+Wed Apr 22 16:43:19 2015
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Apr 22 16:43:19 2015 ;
+; Revision Name                   ; DP3_Spring2015                        ;
+; Top-level Entity Name           ; DP3_Spring2015                        ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Bowei/Desktop/ECE2504/DP3/DP3_Spring2015_final.qar' into the 'C:/Users/Bowei/Desktop/ECE2504/DP3/DP3_Spring2015_final_restored/' directory
+Info: Generated report 'DP3_Spring2015.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 359 megabytes
+    Info: Processing ended: Wed Apr 22 16:43:19 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------------------------------------+
+; Files Restored                                            ;
++-----------------------------------------------------------+
+; File Name                                                 ;
++-----------------------------------------------------------+
+; DP3_Spring2015.qpf                                        ;
+; DP3_Spring2015.qsf                                        ;
+; DP3_Spring2015.sdc                                        ;
+; DP3_Spring2015.v                                          ;
+; assignment_defaults.qdf                                   ;
+; button_fsm.v                                              ;
+; cpu.v                                                     ;
+; data.txt                                                  ;
+; db/DP3_Spring2015.cmp.hdb                                 ;
+; db/DP3_Spring2015.db_info                                 ;
+; dp3_debug.tcl                                             ;
+; dp3_probe.qip                                             ;
+; dp3_probe.v                                               ;
+; dual_port_ram.v                                           ;
+; function_unit.v                                           ;
+; incremental_db/compiled_partitions/DP3_Spring2015.db_info ;
+; instr_decoder.v                                           ;
+; instruction.txt                                           ;
+; instruction_rom.v                                         ;
+; mux.v                                                     ;
+; mux16_1_8bits.v                                           ;
+; pc_controller.v                                           ;
+; single_port_ram.v                                         ;
+; testwaveform1.vwf                                         ;
++-----------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

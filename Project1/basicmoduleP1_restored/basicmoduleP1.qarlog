@@ -1,0 +1,28 @@
+Quartus II Archive log --	C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/basicmoduleP1.qarlog
+
+Archive:	C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/basicmoduleP1.qar
+Date:		Thu Mar 05 22:50:28 2015
+Quartus II 32-bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/7400.bdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/7404.bdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/BCD_chip_level_reference.bdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/BCD_gate_level_reference.bdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/Waveform.vwf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/Waveform1.vwf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/Waveform2.vwf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/WaveformChip.vwf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/assignment_defaults.qdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/basicmoduleP1.bdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/basicmoduleP1.qpf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/basicmoduleP1.qsf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/basicmoduleP1_assignment_defaults.qdf
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/db/basicmoduleP1.cmp.hdb
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/db/basicmoduleP1.db_info
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/dummy_led.v
+C:/Users/Bowei/Desktop/ECE2504/Project1/basicmoduleP1_restored/incremental_db/compiled_partitions/basicmoduleP1.db_info
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

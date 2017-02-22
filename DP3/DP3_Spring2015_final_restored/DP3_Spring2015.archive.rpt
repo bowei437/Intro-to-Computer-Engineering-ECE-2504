@@ -1,0 +1,96 @@
+Archive Project report for DP3_Spring2015
+Tue Apr 28 22:55:43 2015
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Apr 28 22:55:43 2015 ;
+; Revision Name          ; DP3_Spring2015                        ;
+; Top-level Entity Name  ; DP3_Spring2015                        ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/Bowei/Desktop/Project.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'DP3_Spring2015.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 304 megabytes
+    Info: Processing ended: Tue Apr 28 22:55:44 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------------------------------------+
+; Files Archived                                            ;
++-----------------------------------------------------------+
+; File Name                                                 ;
++-----------------------------------------------------------+
+; assignment_defaults.qdf                                   ;
+; button_fsm.v                                              ;
+; cpu.v                                                     ;
+; data.txt                                                  ;
+; db/DP3_Spring2015.cmp.hdb                                 ;
+; db/DP3_Spring2015.db_info                                 ;
+; dp3_debug.tcl                                             ;
+; dp3_probe.qip                                             ;
+; dp3_probe.v                                               ;
+; DP3_Spring2015.qpf                                        ;
+; DP3_Spring2015.qsf                                        ;
+; DP3_Spring2015.sdc                                        ;
+; DP3_Spring2015.v                                          ;
+; dual_port_ram.v                                           ;
+; function_unit.v                                           ;
+; incremental_db/compiled_partitions/DP3_Spring2015.db_info ;
+; instr_decoder.v                                           ;
+; instruction.txt                                           ;
+; instruction_rom.v                                         ;
+; mux.v                                                     ;
+; mux16_1_8bits.v                                           ;
+; pc_controller.v                                           ;
+; single_port_ram.v                                         ;
+; testwaveform1.vwf                                         ;
++-----------------------------------------------------------+
+
+

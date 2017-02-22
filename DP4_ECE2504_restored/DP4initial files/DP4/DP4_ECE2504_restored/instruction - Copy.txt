@@ -1,0 +1,63 @@
+// ECE 2504 Fall 2014  Design project 4: Instruction memory values
+// 
+
+// This text file contains the memory contents of the instruction memory
+
+// in hex.   The memory is 16 bits wide, which is 4 hex digits per address.
+//  
+
+//  You should modify the contents of this file to use your the hex values
+
+//  for the instructions in your program.  
+//  
+
+//  You are not permitted to change the instructions in addresses 0x00-11
+// 
+
+//  "@<number>" specifies the memory location of the next line of data 
+
+//  and then the next lines are in consecutive locations.
+@0
+9807
+8407
+8405
+e000
+9804
+1c00
+1c00
+1c00
+2040
+0200
+2080
+0200
+20c0
+0200
+2100
+0200
+2140
+9800
+
+// The next instruction is an infinite loop at address 0x11, which will
+
+// be used for validation.  
+
+c000
+
+// You can change the instructions after this point.
+9804
+1c00
+1c00
+1c00
+2040
+0200
+2080
+0200
+20c0
+9840
+2118
+c024
+0d20
+044a
+c1e5
+9804
+e000

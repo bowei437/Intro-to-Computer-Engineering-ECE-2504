@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Bowei\Desktop\ECE2504\Project1\basicmoduleP1_restored\simulation\qsim
+vbasicmoduleP1
+Z1 !s100 kk_V:O86A``WDYk8_@ZA;3
+Z2 I;jLlFV2X]na=SJ[N`Xd552
+Z3 V9FaEJO[;HeZeM>Jj75Se60
+Z4 dC:\Users\Bowei\Desktop\ECE2504\Project1\basicmoduleP1_restored\simulation\qsim
+Z5 w1425615276
+Z6 8basicmoduleP1.vo
+Z7 FbasicmoduleP1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|basicmoduleP1.vo|
+Z10 o-work work -O0
+Z11 nbasicmodule@p1
+!i10b 1
+!s85 0
+Z12 !s108 1425615276.937000
+Z13 !s107 basicmoduleP1.vo|
+!s101 -O0
+vbasicmoduleP1_vlg_check_tst
+!i10b 1
+!s100 L8[Q3a=UU<P@4j41XzdQD3
+ID0KMLmW:<B@fT1nj9i;:Z0
+Z14 Vn;Q824_:1ng1o9:@Adi3X3
+R4
+Z15 w1425615274
+Z16 8WaveformChip.vwf.vt
+Z17 FWaveformChip.vwf.vt
+L0 71
+R8
+r1
+!s85 0
+31
+Z18 !s108 1425615277.042000
+Z19 !s107 WaveformChip.vwf.vt|
+Z20 !s90 -work|work|WaveformChip.vwf.vt|
+!s101 -O0
+R10
+Z21 nbasicmodule@p1_vlg_check_tst
+vbasicmoduleP1_vlg_sample_tst
+!i10b 1
+!s100 [17a6c]Q4Z6XbNZG8GJLj1
+IF=Q<>nBIkGIMBWVbM`RDm2
+Z22 Vcdf`kU6VDK6mF<KP:CkR^3
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z23 nbasicmodule@p1_vlg_sample_tst
+vbasicmoduleP1_vlg_vec_tst
+!i10b 1
+!s100 mnTVcZLO@mTmLF4=jjTLc3
+IbWKRifVCHX[ACV=DgJ0TW1
+Z24 Vh=zHW1PISz[Jh^Smf@Ngc3
+R4
+R15
+R16
+R17
+L0 274
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z25 nbasicmodule@p1_vlg_vec_tst

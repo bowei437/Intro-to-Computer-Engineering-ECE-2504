@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Bowei\Desktop\ECE2504\HW6.3\simulation\qsim
+vadder1bit
+Z1 !s100 UWML4[k4OFXEZz;VWSVI93
+Z2 ImI_i20cZdnHabbML=e8e@2
+Z3 V12K9TO2obQXiL3fXF_XHV1
+Z4 dC:\Users\Bowei\Desktop\ECE2504\HW6.3\simulation\qsim
+Z5 w1427757917
+Z6 8adder1bit.vo
+Z7 Fadder1bit.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|adder1bit.vo|
+Z10 o-work work -O0
+Z11 !s108 1427757918.096000
+Z12 !s107 adder1bit.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vadder1bit_vlg_check_tst
+Z13 !s100 Qe?>_ka>Fl8f6V];lCX?R0
+Z14 I>ZRAL=NoE0MRY=XUTmUY60
+Z15 V[NkF@c62CaGg4FT:a@T230
+R4
+Z16 w1427757915
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 61
+R8
+r1
+31
+Z19 !s108 1427757918.173000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vadder1bit_vlg_sample_tst
+Z22 !s100 RV?odcOS6cn3oiOX`>^MO2
+Z23 IZNEc816hh<5nbDDJ^RC`X2
+Z24 VYE9GOlf8:8D3a989R^P1O2
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vadder1bit_vlg_vec_tst
+Z25 IXRdZ8PN0a7l54iAYk6EFF3
+Z26 VnYT8:02S]hkPMfL<7UlO>2
+R4
+R16
+R17
+R18
+Z27 L0 183
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z28 !s100 kiPBP3Oz<K5Hi1XHQEOH]1
+!i10b 1
+!s85 0
+!s101 -O0
+vadder4bit
+Z29 !s100 TO<g0eV<@Y>3<NCh@Q9?51
+Z30 I_<41e1iD34j>HkA>nGBH]1
+Z31 V@?^N[=zdCe5`:=aLQIShE0
+R4
+Z32 w1427760233
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+!s85 0
+Z33 !s108 1427760234.084000
+R12
+!s101 -O0
+vadder4bit_vlg_check_tst
+!i10b 1
+Z34 !s100 z]^T0Sl>2kL:@4]hVjJIZ1
+Z35 IPkU<iW^ej`eiK8R8XDOh91
+Z36 VRa8266]JB6^FHfbJYIWJl1
+R4
+Z37 w1427760231
+Z38 8Waveform2.vwf.vt
+Z39 FWaveform2.vwf.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z40 !s108 1427760234.168000
+Z41 !s107 Waveform2.vwf.vt|
+Z42 !s90 -work|work|Waveform2.vwf.vt|
+!s101 -O0
+R10
+vadder4bit_vlg_sample_tst
+!i10b 1
+Z43 !s100 WBNjk]M0f:gm;;S056a=C1
+Z44 I@5M?^i4eTf?m2KnIgRFCX0
+Z45 V@z5Z>9iAh[z==jIEX^4Qo2
+R4
+R37
+R38
+R39
+L0 29
+R8
+r1
+!s85 0
+31
+R40
+R41
+R42
+!s101 -O0
+R10
+vadder4bit_vlg_vec_tst
+!i10b 1
+Z46 !s100 ^TNH537aKBjaEeflW^DL13
+Z47 Id@^`=2XQAj7FTVe;FO8im1
+Z48 VP0GUAeGn^K?FTmBk?mDVJ0
+R4
+R37
+R38
+R39
+Z49 L0 236
+R8
+r1
+!s85 0
+31
+R40
+R41
+R42
+!s101 -O0
+R10

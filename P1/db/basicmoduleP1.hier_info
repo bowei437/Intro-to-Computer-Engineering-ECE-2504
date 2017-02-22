@@ -1,0 +1,142 @@
+|basicmoduleP1
+gate_t <= BCD_gate_level_reference:inst1.t
+a => BCD_gate_level_reference:inst1.a
+b => BCD_gate_level_reference:inst1.b
+c => BCD_gate_level_reference:inst1.c
+d => BCD_gate_level_reference:inst1.d
+gate_u <= BCD_gate_level_reference:inst1.u
+gate_v <= BCD_gate_level_reference:inst1.v
+gate_w <= BCD_gate_level_reference:inst1.w
+gate_x <= BCD_gate_level_reference:inst1.x
+gate_y <= BCD_gate_level_reference:inst1.y
+gate_z <= BCD_gate_level_reference:inst1.z
+chip_u <= BCD_chip_level_reference:inst3.OUT_U
+S3 => BCD_chip_level_reference:inst3.S3
+S2 => BCD_chip_level_reference:inst3.S2
+S1 => BCD_chip_level_reference:inst3.S1
+S0 => BCD_chip_level_reference:inst3.S0
+chip_v <= BCD_chip_level_reference:inst3.OUT_V
+chip_dummy_led_output[0] <= dummy_led:inst4.out[0]
+chip_dummy_led_output[1] <= dummy_led:inst4.out[1]
+chip_dummy_led_output[2] <= dummy_led:inst4.out[2]
+chip_dummy_led_output[3] <= dummy_led:inst4.out[3]
+gate_dummy_led_output[0] <= dummy_led:inst2.out[0]
+gate_dummy_led_output[1] <= dummy_led:inst2.out[1]
+gate_dummy_led_output[2] <= dummy_led:inst2.out[2]
+gate_dummy_led_output[3] <= dummy_led:inst2.out[3]
+
+
+|basicmoduleP1|BCD_gate_level_reference:inst1
+t <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+b => instN2.IN0
+b => inst13.IN0
+b => inst14.IN0
+b => inst29.IN1
+b => inst35.IN1
+c => instN3.IN0
+c => inst12.IN0
+c => inst6.IN0
+a => instN1.IN0
+a => inst19.IN0
+d => instN4.IN0
+d => inst14.IN1
+d => inst8.IN1
+d => inst6.IN1
+u <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+v <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+w <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+x <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+y <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+z <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|basicmoduleP1|BCD_chip_level_reference:inst3
+OUT_U <= 7400:inst.11
+S2 => 7400:inst.1
+S2 => 7400:inst.4
+S1 => 7404:inst3.1
+S0 => 7404:inst3.3
+S0 => 7400:inst.5
+S3 => 7400:inst2.10
+OUT_V <= 7400:inst.8
+
+
+|basicmoduleP1|BCD_chip_level_reference:inst3|7400:inst
+3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst.IN0
+1 => inst.IN1
+6 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst1.IN0
+4 => inst1.IN1
+8 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+9 => inst2.IN0
+10 => inst2.IN1
+11 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+12 => inst3.IN0
+13 => inst3.IN1
+7 => ~NO_FANOUT~
+14 => ~NO_FANOUT~
+
+
+|basicmoduleP1|BCD_chip_level_reference:inst3|7404:inst3
+2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst1.IN0
+6 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+8 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+9 => inst3.IN0
+10 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+11 => inst4.IN0
+12 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+13 => inst5.IN0
+7 => ~NO_FANOUT~
+14 => ~NO_FANOUT~
+
+
+|basicmoduleP1|BCD_chip_level_reference:inst3|7400:inst2
+3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst.IN0
+1 => inst.IN1
+6 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst1.IN0
+4 => inst1.IN1
+8 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+9 => inst2.IN0
+10 => inst2.IN1
+11 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+12 => inst3.IN0
+13 => inst3.IN1
+7 => ~NO_FANOUT~
+14 => ~NO_FANOUT~
+
+
+|basicmoduleP1|dummy_led:inst4
+t => Decoder0.IN0
+u => Decoder0.IN1
+v => Decoder0.IN2
+w => Decoder0.IN3
+x => Decoder0.IN4
+y => Decoder0.IN5
+z => Decoder0.IN6
+out[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|basicmoduleP1|dummy_led:inst2
+t => Decoder0.IN0
+u => Decoder0.IN1
+v => Decoder0.IN2
+w => Decoder0.IN3
+x => Decoder0.IN4
+y => Decoder0.IN5
+z => Decoder0.IN6
+out[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

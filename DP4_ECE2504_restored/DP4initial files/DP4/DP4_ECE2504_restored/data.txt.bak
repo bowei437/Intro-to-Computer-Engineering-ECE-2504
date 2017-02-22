@@ -1,0 +1,29 @@
+// ECE 2504 Fall 2014  Design project 4:  Data memory values
+// 
+// This text file contains the initial contents of the data memory
+// in hex.   The memory is 16 bits wide, which is 4 hex digits per address.
+//  
+//  You should modify the contents of this file to use the memory layout
+//  described in the project specification:
+//  Location 0x0:  Pointer to head of array
+//  Location 0x21: Beginning of array
+// 
+//  "@<number>" specifies the memory location in hex of the next line of data 
+//  and then the next lines are in consecutive locations.
+@0
+0021
+0005
+2504
+3504
+3544
+4514
+//  Now the beginning of the array.  Replace these values as directed in the
+//  project specification.
+@21
+0012
+0034
+0041
+0021
+AA66
+5500
+0042

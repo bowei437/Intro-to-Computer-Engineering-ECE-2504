@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+// ECE 2504 Design Project 4 (Spring 2015): Instruction Memory
+// 
+
+// This text file contains the contents of the instruction memory in hex.
+// The memory is 16 bits wide, which is 4 hex digits per address.
+// 
+ 
+// Modify the contents of this file to use your the machine code values for the
+// 
+instructions in your program. RECOMPILE THE VERILOG PROJECT EACH TIME YOU
+// CHANGE THIS FILE.
+//
+
+// The assembler produces an output file called instruction.txt; you may use
+
+// that one, or you may copy its results into the machine code space below.
+//  
+// Regardless of which approach you choose, DO NOT change the instructions in
+
+// addresses 0x0-0xB.
+// 
+
+// "@<number>" specifies the memory location of the next line of data.
+ 
+// The values in the lines that follow are in consecutive locations.
+
+////////////////////////////////////////////////////////////////////////////////
+// This is the "Branch to Main" section.
+////////////////////////////////////////////////////////////////////////////////
+@0
+9806
+8406
+e000
+////////////////////////////////////////////////////////////////////////////////
+// This is the "Validation" section.
+// The last two instructions set up and execute an infinite loop.
+// The infinite loop occurs at address 0xB.
+////////////////////////////////////////////////////////////////////////////////
+9804
+1c00
+2040
+0200
+2080
+0200
+20c0
+9800
+c000
+////////////////////////////////////////////////////////////////////////////////
+// Insert the machine code for your user code after this point.
+// MAKE SURE THAT YOUR LAST INSTRUCTION IS A JUMP TO ADDRESS 0x3.
+////////////////////////////////////////////////////////////////////////////////
+
+9804
+1c00
+9842
+4001
+0200
+9845
+4001
+0200
+9840
+4001
+0200
+9844
+4001
+9803
+e000

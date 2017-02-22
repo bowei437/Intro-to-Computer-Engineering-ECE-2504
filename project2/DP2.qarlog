@@ -1,0 +1,26 @@
+Quartus II Archive log --	D:/Dropbox/Dropbox/ECE 2504/project2/DP2.qarlog
+
+Archive:	D:/Dropbox/Dropbox/ECE 2504/project2/DP2.qar
+Date:		Thu Apr 02 18:56:07 2015
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/dp2_spring2015_input_waveform_example.vwf
+C:/Users/Bowei/Desktop/ECE2504/dptest/DP2_Spring2015.SDC
+C:/Users/Bowei/Desktop/ECE2504/dptest/DP2_Spring2015.bdf
+C:/Users/Bowei/Desktop/ECE2504/dptest/DP2_Spring2015.qpf
+C:/Users/Bowei/Desktop/ECE2504/dptest/DP2_Spring2015.qsf
+C:/Users/Bowei/Desktop/ECE2504/dptest/DP2_Spring2015.sdc
+C:/Users/Bowei/Desktop/ECE2504/dptest/address_counter.v
+C:/Users/Bowei/Desktop/ECE2504/dptest/assignment_defaults.qdf
+C:/Users/Bowei/Desktop/ECE2504/dptest/db/DP2_Spring2015.cmp.hdb
+C:/Users/Bowei/Desktop/ECE2504/dptest/db/DP2_Spring2015.db_info
+C:/Users/Bowei/Desktop/ECE2504/dptest/incremental_db/compiled_partitions/DP2_Spring2015.db_info
+C:/Users/Bowei/Desktop/ECE2504/dptest/mux16_1_8bits.v
+C:/Users/Bowei/Desktop/ECE2504/dptest/rom.txt
+C:/Users/Bowei/Desktop/ECE2504/dptest/single_port_rom.v
+C:/Users/Bowei/Desktop/ECE2504/dptest/your_ALU_mux.v
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

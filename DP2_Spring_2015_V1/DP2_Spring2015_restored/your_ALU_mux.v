@@ -1,0 +1,284 @@
+//  ECE 2504 Design project 2
+//  Spring 2014
+//  Template created by Tom Martin on 15 October 2012
+//  Modified: KLC, 10/20/2013; Modified JGT 4/9/14
+//  **************************************************
+//  This file is the only Verilog file that you should modify.
+//  It should be properly commented and formatted.
+//  **************************************************
+//  
+//
+//
+//
+
+//  The module your_ALU_mux should take the operands A, B and opcode 
+//  from the memory in the top level entity, and apply them to the inputs of your ALU
+//
+//  It should also take the switches as input to control a 16-to-1 8-bit wide mux that
+//  drives the LEDs.  
+//  
+//  Do not change the module declaration (next four lines)
+module your_ALU_mux(your_out, operandA, operandB, opcode, switches, address);
+	input [7:0] operandA, operandB, address;
+	input [3:0] opcode, switches;
+	output [7:0] your_out;
+// Do not change the module declaration (from keyword module above to here)
+	
+	wire [15:0] last_four_ID_digits;
+//  *******************************************************
+//  You MUST change the assignment to last_four_ID_digits 
+//  to the last four digits of your student ID in BCD.
+	assign last_four_ID_digits = 16'h9193;
+//  *******************************************************
+	
+// Declare any wires that you need here.
+	wire [7:0]status_bits, ALU_out;
+	wire C, V, Z, N;
+// Instantiate your ALU and mux.  Use wires to connect them together. 
+ALU(operandA, operandB, opcode, ALU_out, C, V, Z, N);
+   
+	//This combines the status bits together into one binary code
+	assign status_bits [0]=N;
+	assign status_bits [1]=C;
+	assign status_bits [2]=Z;
+	assign status_bits [3]=V;
+	assign status_bits [7:4]=0;
+	
+// The output of the mux is connected to the LEDs in the top-level entity
+// The LED values as a function of the switches is defined in the project specification.
+// This instantiation of the mux is just an example--it does NOT meet the project specification. 
+// You will have to change the port connections to meet the specification.  But this example
+// shows how to connect to constant values (i5 through i15), input ports of various bit 
+//  widths (i1 through i4--opcode is only 4 bits wide, so it is padded with 0's), and internal wires (i0)
+// Look at the file mux16_1_8bits.v for the port definition of the mux.
+// 
+//        ports:      output   select     i15    i14    i13    i12    i11   i10      i9    i8       i7        i6       i5          i4         i3          i2            i1        i0
+mux16_1_8bits MY_MUX(your_out, switches, 8'hF0, 8'hE1, 8'hD2, 8'hC3, 8'hB4, 8'hA5, 8'h96, 8'h87, operandB, operandA, ALU_out, status_bits[7:0], address, {4'b0, opcode}, 16'h0013, 16'h0099);
+
+
+
+endmodule
+// end of your_ALU_mux
+
+
+
+// This is the declaration for your ALU module
+// The operation of the ALU is defined in the project specification.
+module ALU(operandA, operandB, opcode, your_out, C, V, Z, N);
+// Declare your ports
+	input [7:0] operandA, operandB;
+	input [3:0] opcode;
+	output [7:0] your_out;
+	output C, V, Z, N;
+	wire [7:0] wires0, wires1, wires2, wires3, 
+				  wires4, wires5, wires6, wires7, 
+				  wires8, wires9, wires10,wires11;
+	wire Carry_out0, Carry_out1, Carry_out2, Carry_out3, Carry_out4, 
+		  c5, c6, c7, c8, c9, c10, c11, 
+	     v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, 
+		  z0, z1, z2, z3, z4, z5, z6, z7, z8, z9, z10, z11,
+		  n0, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11;
+	// This call adds A and B
+	addition_adder add_op(operandA, operandB, 0, wires0, Carry_out0, v0, z0, n0);
+	// This call subracts B from A
+	addition_adder sub_op(operandA, ~operandB, 1, wires1, Carry_out1, v1, z1, n1);
+	// This call increments A
+	addition_adder inc_op(operandA, 8'b00000001, 0, wires2, Carry_out2, v2, z2, n2);
+   // This call decrements A	
+	addition_adder dec_op(operandA, 8'b11111111, 0, wires3, Carry_out3, v3, z3, n3);
+	// This call creates the negative of A
+	addition_adder neg_op(~operandA, 8'b00000000, 1, wires4, Carry_out4, v4, z4, n4); 
+	// This call ANDs A and B together
+	bit_and ba_op(operandA, operandB, wires5, z5, n5, c5, v5); 
+	// This call ORs A and B together 
+	bit_xor bo_op(operandA, operandB, wires6, z6, n6, c6, v6); 
+	// This call inverses(nots) A
+	
+	bit_not bn_op(operandA, wires7, z7, n7, c7, v7); 
+	// This call divides A by 4
+	division4 div_op(operandA, wires8, z8, n8, c8, v8);
+   // This shows the remainder(modulus) of the division
+	modulate mod_op(operandA, 8'b00000011, wires9, z9, n9, c9, v9);
+	// This does a circular shift left on A
+	cll circle_l(operandA, wires10, z10, n10, c10, v10); 
+	// This does a circular shift right on A
+
+	clr circle_r(operandA, wires11, z11, n11, c11, v11); 
+	// This determines what operation output goes to the mux.
+	assign your_out = (opcode == 4'b0000) ? wires0 :
+	                  (opcode == 4'b0001) ? wires1 :
+							(opcode == 4'b0010) ? wires2 :
+	                  (opcode == 4'b0011) ? wires3 :
+							(opcode == 4'b0100) ? wires4 :
+	                  (opcode == 4'b0101) ? wires5 :
+							(opcode == 4'b0110) ? wires6 :
+	                  (opcode == 4'b0111) ? wires7 :
+							(opcode == 4'b1000) ? wires8 :
+	                  (opcode == 4'b1001) ? wires9 :
+							(opcode == 4'b1010) ? wires10:
+	                  (opcode == 4'b1011) ? wires11: 8'b00000000;
+	// This outputs the overflow status for each combination
+	assign V = (opcode == 4'b0000) ? v0 :
+	           (opcode == 4'b0001) ? v1 :
+				  (opcode == 4'b0010) ? v2 :
+				  (opcode == 4'b0011) ? v3 :
+				  (opcode == 4'b0100) ? v4 : 0;
+	// This outputs the carry out status for each combination
+	assign C = (opcode == 4'b0000) ? Carry_out0 :
+	           (opcode == 4'b0001) ? Carry_out1 :
+				  (opcode == 4'b0010) ? Carry_out2 :
+				  (opcode == 4'b0011) ? Carry_out3 :
+				  (opcode == 4'b0100) ? Carry_out4 : 0;
+	// This outputs the sign(negative) status for each combination
+	assign N = (opcode == 4'b0000) ? n0 :
+	           (opcode == 4'b0001) ? n1 :
+				  (opcode == 4'b0010) ? n2 :
+	           (opcode == 4'b0011) ? n3 :
+				  (opcode == 4'b0100) ? n4 :
+	           (opcode == 4'b0101) ? n5 :
+				  (opcode == 4'b0110) ? n6 :
+	           (opcode == 4'b0111) ? n7 :
+				  (opcode == 4'b1000) ? n8 :
+	           (opcode == 4'b1001) ? n9 : 0;
+	// This outputs the zero status for each combination
+	assign Z = (opcode == 4'b0000) ? z0 :
+	           (opcode == 4'b0001) ? z1 :
+				  (opcode == 4'b0010) ? z2 :
+	           (opcode == 4'b0011) ? z3 :
+				  (opcode == 4'b0100) ? z4 :
+	           (opcode == 4'b0101) ? z5 :
+				  (opcode == 4'b0110) ? z6 :
+	           (opcode == 4'b0111) ? z7 :
+				  (opcode == 4'b1000) ? z8 :
+	           (opcode == 4'b1001) ? z9 : 0;
+// The last output of 00000000 is to designate that no further operations are in the ALU. 
+
+endmodule
+// end of ALU
+
+
+// Add any other modules that you need after this point.
+module addition_adder (A, B, Cin, result_add,Cout_add, V, Z, N);
+	input [7:0] A,B;		// Two 2-bit addends.
+	input Cin;			// 1-bit carry-in to the LSB.
+	output [7:0] result_add;		// The 2-bit sum.
+	output Cout_add, V, Z, N;		// 1-bit carry-out from the MSB.
+	
+	wire C1, C2, C3, C4, C5, C6, C7;
+
+	// This calls the addition function
+	adder1bit add0(A[0], B[0], Cin,result_add[0], C1);
+	adder1bit add1(A[1], B[1], C1, result_add[1], C2);
+	adder1bit add2(A[2], B[2], C2, result_add[2], C3);
+	adder1bit add3(A[3], B[3], C3, result_add[3], C4);
+	adder1bit add4(A[4], B[4], C4, result_add[4], C5);
+	adder1bit add5(A[5], B[5], C5, result_add[5], C6);
+	adder1bit add6(A[6], B[6], C6, result_add[6], C7);
+	adder1bit add7(A[7], B[7], C7, result_add[7],Cout_add);
+	
+	assign V = (C7 != Cout_add) ? 1 : 0;
+	assign Z = (result_add == 8'b00000000) ? 1 : 0;
+	assign N = result_add[7];
+
+endmodule 
+	
+module adder1bit (A, B, Cin, result_add, Cout_add);
+	input A,B;			// Two 1-bit addends.
+	input Cin;			// 1-bit carry-in.
+	output result_add;			// The 1-bit sum.
+	output Cout_add;		// 1-bit carry-out from the MSB.
+
+	wire w1, w2, w3;
+	
+	and A1(w1,A,B), A2(w2,A,Cin), A3(w3,B,Cin);
+	or  O1(Cout_add,w1,w2,w3);
+	xor X1(result_add,A,B,Cin);
+
+endmodule 
+
+module bit_and (A, B, result_and, Z, N, C, V); // This performs the ANDing operation
+	input [7:0] A, B;
+	output [7:0] result_and;
+	output C, V, N, Z;
+	
+	assign result_and = (A & B); 
+	assign Z = (result_and == 8'b0) ? 1 : 0;
+	assign N = result_and[7];
+	assign C = 0;
+	assign V = 0;
+	
+endmodule 
+
+module bit_xor (A, B, result_xor, Z, N, C, V); // This performs the ORing operation
+	input [7:0] A, B;
+	output [7:0] result_xor;
+	output C, V, N, Z;
+	
+	assign result_xor = (A ^ B);
+	assign Z = (result_xor == 8'b0) ? 1 : 0;
+	assign N = result_xor[7];
+	assign C = 0;
+	assign V = 0;
+	
+endmodule 
+
+// This performs the inverting(NOTing) operation
+module bit_not (A, result_not, Z, N, C, V); 
+	input [7:0] A;
+	output [7:0] result_not;
+	output C, V, N, Z;
+	
+	assign result_not = (~A);
+	assign Z = (result_not == 8'b0) ? 1 : 0;
+	assign N = result_not[7];
+	assign C = 0;
+	assign V = 0;
+	
+endmodule 
+
+// This performs the division and modulus operations
+module division4 (A, result_div, Z, N, C, V); 
+	input [7:0] A;
+	output [7:0] result_div;
+	output C, V, N, Z;
+	
+   assign result_div = (A >> 2);
+	assign Z = (result_div == 8'b0) ? 1 : 0;
+	assign N = result_div[7];
+	assign C = 0;
+	assign V = 0;
+	
+endmodule 	
+
+module modulate (A, mod_2, result_mod, Z, N, C, V);
+	input [7:0] A, mod_2;
+	output [7:0] result_mod;
+	output C, V, N, Z;
+	
+	// This calls the bitwise AND function to obtain the first two bits of the A register
+	// or the remainder
+	bit_and mask(A, mod_2, result_mod);	
+	
+	assign Z = (result_mod == 8'b0) ? 1 : 0;
+	assign N = result_mod[7];
+	assign C = 0;
+	assign V = 0;
+	
+endmodule 
+
+module cll (A, result_cll, Z, N, C, V);  //This performs the circular shift left operation
+	input [7:0] A;
+	output [7:0] result_cll;
+	output Z, N, C, V = 0;
+	assign result_cll = {A[6:0], A[7]};
+		
+endmodule 
+
+module clr (A, result_clr, Z, N, C, V);  //This performs the circular shift right operation
+	input [7:0] A;
+	output [7:0] result_clr;
+	output Z, N, C, V = 0;
+	
+	assign result_clr = {A[0], A[7:1]};
+	
+endmodule

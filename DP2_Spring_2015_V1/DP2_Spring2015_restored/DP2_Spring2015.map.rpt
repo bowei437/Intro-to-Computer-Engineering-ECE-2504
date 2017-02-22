@@ -1,0 +1,628 @@
+Analysis & Synthesis report for DP2_Spring2015
+Wed Apr 01 22:31:46 2015
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |DP2_Spring2015|address_counter:inst|key_state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: address_counter:inst
+ 12. Parameter Settings for User Entity Instance: single_port_rom:inst2
+ 13. Port Connectivity Checks: "your_ALU_mux:inst1|mux16_1_8bits:MY_MUX"
+ 14. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|clr:circle_r"
+ 15. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|cll:circle_l"
+ 16. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op|bit_and:mask"
+ 17. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op"
+ 18. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|division4:div_op"
+ 19. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|bit_not:bn_op"
+ 20. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|bit_xor:bo_op"
+ 21. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|bit_and:ba_op"
+ 22. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op"
+ 23. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op"
+ 24. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op"
+ 25. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op"
+ 26. Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Apr 01 22:31:46 2015      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; DP2_Spring2015                             ;
+; Top-level Entity Name              ; DP2_Spring2015                             ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 202                                        ;
+;     Total combinational functions  ; 202                                        ;
+;     Dedicated logic registers      ; 25                                         ;
+; Total registers                    ; 25                                         ;
+; Total pins                         ; 15                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; DP2_Spring2015     ; DP2_Spring2015     ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; your_ALU_mux.v                   ; yes             ; User Verilog HDL File                    ; C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/your_ALU_mux.v     ;         ;
+; single_port_rom.v                ; yes             ; User Verilog HDL File                    ; C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/single_port_rom.v  ;         ;
+; mux16_1_8bits.v                  ; yes             ; User Verilog HDL File                    ; C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/mux16_1_8bits.v    ;         ;
+; address_counter.v                ; yes             ; User Verilog HDL File                    ; C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/address_counter.v  ;         ;
+; rom.txt                          ; yes             ; Auto-Found File                          ; C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/rom.txt            ;         ;
+; dp2_spring2015.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/dp2_spring2015.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimated Total logic elements              ; 202                         ;
+;                                             ;                             ;
+; Total combinational functions               ; 202                         ;
+; Logic element usage by number of LUT inputs ;                             ;
+;     -- 4 input functions                    ; 144                         ;
+;     -- 3 input functions                    ; 43                          ;
+;     -- <=2 input functions                  ; 15                          ;
+;                                             ;                             ;
+; Logic elements by mode                      ;                             ;
+;     -- normal mode                          ; 195                         ;
+;     -- arithmetic mode                      ; 7                           ;
+;                                             ;                             ;
+; Total registers                             ; 25                          ;
+;     -- Dedicated logic registers            ; 25                          ;
+;     -- I/O registers                        ; 0                           ;
+;                                             ;                             ;
+; I/O pins                                    ; 15                          ;
+; Embedded Multiplier 9-bit elements          ; 0                           ;
+; Maximum fan-out node                        ; single_port_rom:inst2|q[17] ;
+; Maximum fan-out                             ; 47                          ;
+; Total fan-out                               ; 813                         ;
+; Average fan-out                             ; 3.16                        ;
++---------------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
+; |DP2_Spring2015                  ; 202 (0)           ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |DP2_Spring2015                                                                     ; work         ;
+;    |address_counter:inst|        ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|address_counter:inst                                                ; work         ;
+;    |single_port_rom:inst2|       ; 18 (18)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|single_port_rom:inst2                                               ; work         ;
+;    |your_ALU_mux:inst1|          ; 176 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1                                                  ; work         ;
+;       |ALU:comb_19|              ; 135 (74)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19                                      ; work         ;
+;          |addition_adder:add_op| ; 11 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op                ; work         ;
+;             |adder1bit:add1|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add1 ; work         ;
+;          |addition_adder:dec_op| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op                ; work         ;
+;          |addition_adder:inc_op| ; 5 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op                ; work         ;
+;             |adder1bit:add3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add3 ; work         ;
+;             |adder1bit:add4|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add4 ; work         ;
+;             |adder1bit:add5|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add5 ; work         ;
+;          |addition_adder:neg_op| ; 10 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op                ; work         ;
+;             |adder1bit:add1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add1 ; work         ;
+;             |adder1bit:add3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add3 ; work         ;
+;             |adder1bit:add4|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add4 ; work         ;
+;             |adder1bit:add5|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add5 ; work         ;
+;             |adder1bit:add6|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add6 ; work         ;
+;          |addition_adder:sub_op| ; 20 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op                ; work         ;
+;             |adder1bit:add1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add1 ; work         ;
+;             |adder1bit:add2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add2 ; work         ;
+;             |adder1bit:add3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add3 ; work         ;
+;             |adder1bit:add4|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add4 ; work         ;
+;             |adder1bit:add5|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add5 ; work         ;
+;             |adder1bit:add6|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add6 ; work         ;
+;          |bit_and:ba_op|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|bit_and:ba_op                        ; work         ;
+;          |bit_not:bn_op|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|bit_not:bn_op                        ; work         ;
+;          |bit_xor:bo_op|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|bit_xor:bo_op                        ; work         ;
+;       |mux16_1_8bits:MY_MUX|     ; 41 (41)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DP2_Spring2015|your_ALU_mux:inst1|mux16_1_8bits:MY_MUX                             ; work         ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------+
+; State Machine - |DP2_Spring2015|address_counter:inst|key_state                              ;
++------------------------+--------------------+------------------------+----------------------+
+; Name                   ; key_state.KEY_OPEN ; key_state.KEY_RELEASED ; key_state.KEY_PUSHED ;
++------------------------+--------------------+------------------------+----------------------+
+; key_state.KEY_OPEN     ; 0                  ; 0                      ; 0                    ;
+; key_state.KEY_PUSHED   ; 1                  ; 0                      ; 1                    ;
+; key_state.KEY_RELEASED ; 1                  ; 1                      ; 0                    ;
++------------------------+--------------------+------------------------+----------------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++---------------------------------------+-----------------------------------------+
+; Register name                         ; Reason for Removal                      ;
++---------------------------------------+-----------------------------------------+
+; single_port_rom:inst2|q[7]            ; Stuck at GND due to stuck port data_in  ;
+; single_port_rom:inst2|q[19]           ; Merged with single_port_rom:inst2|q[13] ;
+; Total Number of Removed Registers = 2 ;                                         ;
++---------------------------------------+-----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 25    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 7     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: address_counter:inst ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; COUNTER_WIDTH  ; 4     ; Signed Integer                           ;
+; KEY_OPEN       ; 00    ; Unsigned Binary                          ;
+; KEY_PUSHED     ; 01    ; Unsigned Binary                          ;
+; KEY_RELEASED   ; 10    ; Unsigned Binary                          ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: single_port_rom:inst2 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; DATA_WIDTH     ; 20    ; Signed Integer                            ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|mux16_1_8bits:MY_MUX"                                                                                                                                              ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                           ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i15[7..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i15[3..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i14[7..5] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i14[4..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i14[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i13[7..6] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i13[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i13[5]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i13[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i13[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i13[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i12[7..6] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i12[1..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i12[5..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i11[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i11[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i11[7]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i11[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i11[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i11[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i10[4..3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i10[7]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i10[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i10[5]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i10[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i10[1]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i10[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i9[2..1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i9[6..5]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i9[7]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i9[4]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i9[3]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i9[0]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i8[2..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i8[6..3]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i8[7]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i4[7..4]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i2[7..4]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i1        ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (8 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[1..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i1[7..5]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i1[3..2]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i1[4]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i0        ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (8 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i0[4..3]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i0[6..5]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i0[2..1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; i0[7]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; i0[0]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|clr:circle_r"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Z    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; N    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|cll:circle_l"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Z    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; N    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op|bit_and:mask"                                             ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Z    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; N    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; C    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op"                                            ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; mod_2[1..0] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; mod_2[7..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; C           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|division4:div_op"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|bit_not:bn_op"                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|bit_xor:bo_op"                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|bit_and:ba_op"                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op"                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; B       ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op"                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; B       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op"                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; B[7..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; B[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op"                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op"                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Apr 01 22:31:41 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DP2_Spring2015 -c DP2_Spring2015
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 11 design units, including 11 entities, in source file your_alu_mux.v
+    Info (12023): Found entity 1: your_ALU_mux
+    Info (12023): Found entity 2: ALU
+    Info (12023): Found entity 3: addition_adder
+    Info (12023): Found entity 4: adder1bit
+    Info (12023): Found entity 5: bit_and
+    Info (12023): Found entity 6: bit_xor
+    Info (12023): Found entity 7: bit_not
+    Info (12023): Found entity 8: division4
+    Info (12023): Found entity 9: modulate
+    Info (12023): Found entity 10: cll
+    Info (12023): Found entity 11: clr
+Info (12021): Found 1 design units, including 1 entities, in source file single_port_rom.v
+    Info (12023): Found entity 1: single_port_rom
+Info (12021): Found 1 design units, including 1 entities, in source file mux16_1_8bits.v
+    Info (12023): Found entity 1: mux16_1_8bits
+Info (12021): Found 1 design units, including 1 entities, in source file address_counter.v
+    Info (12023): Found entity 1: address_counter
+Warning (12019): Can't analyze file -- file DP2_Fall2014.bdf is missing
+Critical Warning (10846): Verilog HDL Instantiation warning at your_ALU_mux.v(38): instance has no name
+Warning (12125): Using design file dp2_spring2015.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: DP2_Spring2015
+Info (12127): Elaborating entity "DP2_Spring2015" for the top level hierarchy
+Info (12128): Elaborating entity "your_ALU_mux" for hierarchy "your_ALU_mux:inst1"
+Warning (10036): Verilog HDL or VHDL warning at your_ALU_mux.v(27): object "last_four_ID_digits" assigned a value but never read
+Info (12128): Elaborating entity "ALU" for hierarchy "your_ALU_mux:inst1|ALU:comb_19"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(121): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(127): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(133): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(144): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "addition_adder" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(179): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(180): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "adder1bit" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add0"
+Info (12128): Elaborating entity "bit_and" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|bit_and:ba_op"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(205): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "bit_xor" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|bit_xor:bo_op"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(218): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "bit_not" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|bit_not:bn_op"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(232): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "division4" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|division4:div_op"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(246): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "modulate" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op"
+Warning (10230): Verilog HDL assignment warning at your_ALU_mux.v(262): truncated value with size 32 to match size of target (1)
+Info (12128): Elaborating entity "cll" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|cll:circle_l"
+Warning (10034): Output port "Z" at your_ALU_mux.v(272) has no driver
+Warning (10034): Output port "N" at your_ALU_mux.v(272) has no driver
+Warning (10034): Output port "C" at your_ALU_mux.v(272) has no driver
+Info (12128): Elaborating entity "clr" for hierarchy "your_ALU_mux:inst1|ALU:comb_19|clr:circle_r"
+Warning (10034): Output port "Z" at your_ALU_mux.v(280) has no driver
+Warning (10034): Output port "N" at your_ALU_mux.v(280) has no driver
+Warning (10034): Output port "C" at your_ALU_mux.v(280) has no driver
+Info (12128): Elaborating entity "mux16_1_8bits" for hierarchy "your_ALU_mux:inst1|mux16_1_8bits:MY_MUX"
+Info (12128): Elaborating entity "address_counter" for hierarchy "address_counter:inst"
+Info (12128): Elaborating entity "single_port_rom" for hierarchy "single_port_rom:inst2"
+Warning (10850): Verilog HDL warning at single_port_rom.v(29): number of words (7) in memory file does not match the number of elements in the address range [0:15]
+Warning (10030): Net "rom.data_a" at single_port_rom.v(21) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.waddr_a" at single_port_rom.v(21) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.we_a" at single_port_rom.v(21) has no driver or initial value, using a default initial value '0'
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "single_port_rom:inst2|rom" is uninferred due to inappropriate RAM size
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/db/DP2_Spring2015.ram0_single_port_rom_19d60bdc.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/DP2_Spring2015.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 202 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 481 megabytes
+    Info: Processing ended: Wed Apr 01 22:31:46 2015
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Bowei/Desktop/ECE2504/DP2_Spring_2015_V1/DP2_Spring2015_restored/DP2_Spring2015.map.smsg.
+
+

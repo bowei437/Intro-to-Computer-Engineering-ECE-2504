@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Bowei\Desktop\ECE2504\HW3.5\simulation\qsim
+vHW3P4
+Z1 I6j^b9R[jGeP4OUkUF1`:K3
+Z2 VEAmRKXBL`UD6XA><@Eo>`3
+Z3 dC:\Users\Bowei\Desktop\ECE2504\HW3.5\simulation\qsim
+Z4 w1424239207
+Z5 8HW3P4.vo
+Z6 FHW3P4.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|HW3P4.vo|
+Z9 o-work work -O0
+Z10 n@h@w3@p4
+!i10b 1
+Z11 !s100 S9O8V=FCQg8MZJFX`M1Jb1
+!s85 0
+Z12 !s108 1424239208.114000
+Z13 !s107 HW3P4.vo|
+!s101 -O0
+vHW3P4_vlg_check_tst
+!i10b 1
+Z14 !s100 8E6cIF[P]nDIk]=n?H@WO1
+Z15 IDzJ89II_3iB]kzeR_]njh2
+Z16 VhES8IJD^P0Mh1HmMZ]iPV2
+R3
+Z17 w1424239206
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z20 !s108 1424239208.193000
+Z21 !s107 Waveform.vwf.vt|
+Z22 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+Z23 n@h@w3@p4_vlg_check_tst
+vHW3P4_vlg_sample_tst
+!i10b 1
+Z24 !s100 4agF8C<QXd28kEKP>al1W2
+Z25 I1=BiZUZmmROEoK>g3>`fE1
+Z26 VBSEOnCJ2h:l`Ia4OWmSm:0
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@h@w3@p4_vlg_sample_tst
+vHW3P4_vlg_vec_tst
+!i10b 1
+Z28 !s100 2Y=Ab<8OBLO5bi[CSMH[?2
+Z29 Ia:CS=aKzJj<_K:zaAQf=h3
+Z30 Vfd:iBUaG7okbd3gUNVjJ:3
+R3
+R17
+R18
+R19
+Z31 L0 185
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@h@w3@p4_vlg_vec_tst

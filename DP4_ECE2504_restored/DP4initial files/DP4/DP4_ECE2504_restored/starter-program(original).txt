@@ -1,0 +1,70 @@
+//  Starter source code program for ECE 2504 Fall 2014
+//  Project 4
+//   
+//  The on-line assembler is experimental and minimal. 
+//  No guarantees are made about its correctness. 
+//  
+//  Formatting is also strict:
+//  The first two characters of a comment line must be //
+//  Lines with instructions on them should not have comments.
+//
+//  Jordan Holland 12/6/14
+//
+//
+//  Do not change the following segment of code from here
+//  to the comment "CHANGE HERE" below.
+ldi r0, 7
+adi r0, r0, 7
+adi r0, r0, 5
+jmp r0
+// The following set of load instructions
+// read the final values of the variables in
+// memory locations 0x20-0x24 into r1-r5 so that we 
+// can see them on the LEDs
+// Your code must jump to this point after it has
+// stored the results in data memory. You should jump
+// to location 4.
+ldi r0, 4
+shl r0, r0
+shl r0, r0
+shl r0, r0
+ld r1, r0
+inc r0, r0
+ld r2, r0
+inc r0, r0
+ld r3, r0
+inc r0, r0
+ld r4, r0
+inc r0, r0
+ld r5, r0
+// Now loop forever
+ldi r0, 0
+// The address of this brz is the one used in validation: Address 0x12. 
+brz r0, 0
+// You are permitted to add code after this point
+// CHANGE HERE and beyond
+// Your last instruction should be a jump to location 4
+// in order to read the variables into registers r1-r5.
+ldi r0, 4
+shl r0, r0
+shl r0, r0
+shl r0, r0
+ld r1, r0
+inc r0, r0
+ld r2, r0
+inc r0, r0
+ld r3, r0
+ldi r1, 0
+ldi r5, 0
+mova r4, r2
+brz r4, 4
+dec r4, r4
+add r1, r1, r3
+brz r5, -3
+ldi r0, 4
+shl r0, r0
+shl r0, r0
+shl r0, r0
+st r0, r1
+ldi r0, 4
+jmp r0

@@ -1,0 +1,81 @@
+//maximum value
+ldi r0, 1
+ldi r1, r0
+ldi r0, 0
+sub r2, r1, r0
+brn r2, -4
+ld r1, r0
+ldi r0, 0
+brz r0, -2
+ldi r1, r1
+//next comparisons
+ldi r0, 2
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+ld r1, r2
+// next comparisons
+ldi r0, 3
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+ld r1, r2
+// next comparison
+ldi r0, 4
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, 41
+ldi r0, 0
+brz r0, 2
+ld r1, r2
+// next comparison
+ldi r0, 5
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+ld r1, r2
+// next comparison
+ldi r0, 5
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+// next comparison
+ldi r0, 6
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+ld r1, r2
+// next comparison
+ld r0, 7
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+ld r1, r2
+//next comparison
+ldi r0, 8
+ld r2, r0
+sub r0, r1, r2
+brn r0, 4
+ld r1, r1
+ldi r0, 0
+brz r0, 2
+ld r1, r2

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Bowei\Desktop\ECE2504\DP2_Spring_2015_V1\DP2_Spring2015_restored\simulation\qsim
+vDP2_Spring2015
+Z1 ILCBaKJF1^:<@>BQZzJXVk0
+Z2 VkII>^WfG8H^3^J:UP<TD`2
+Z3 dC:\Users\Bowei\Desktop\ECE2504\DP2_Spring_2015_V1\DP2_Spring2015_restored\simulation\qsim
+Z4 w1427937501
+Z5 8DP2_Spring2015.vo
+Z6 FDP2_Spring2015.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@d@p2_@spring2015
+!i10b 1
+Z10 !s100 Y]?X<;oCO>l[XA5V6QG9R2
+!s85 0
+Z11 !s108 1427937502.685000
+Z12 !s107 DP2_Spring2015.vo|
+Z13 !s90 -work|work|DP2_Spring2015.vo|
+!s101 -O0
+vDP2_Spring2015_vlg_check_tst
+!i10b 1
+!s100 bha4YBD4V8lX8E]eE7BBg3
+I3YMH<?AUodeWgTJW2c>zN2
+V>V;DDmGzFHi]z4>MPH>H32
+R3
+Z14 w1427937498
+Z15 8dp2_spring2015_input_waveform_example.vwf.vt
+Z16 Fdp2_spring2015_input_waveform_example.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1427937502.846000
+Z18 !s107 dp2_spring2015_input_waveform_example.vwf.vt|
+Z19 !s90 -work|work|dp2_spring2015_input_waveform_example.vwf.vt|
+!s101 -O0
+R8
+n@d@p2_@spring2015_vlg_check_tst
+vDP2_Spring2015_vlg_sample_tst
+!i10b 1
+!s100 B5JJbKzNjm4a_Z;<M_OT=3
+I47U9FQl61;FM5X>UBWb6V0
+V6=EBXDAAG=Te5SV6Jfb7`1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@d@p2_@spring2015_vlg_sample_tst
+vDP2_Spring2015_vlg_vec_tst
+!i10b 1
+!s100 CF[C;FO;lnUJa3TleTjPY1
+Ih9`fFCa^Nld4=I<DPV?HH1
+V=<?<D;dN;Tg`1AmiNjYSB0
+R3
+R14
+R15
+R16
+L0 297
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@d@p2_@spring2015_vlg_vec_tst

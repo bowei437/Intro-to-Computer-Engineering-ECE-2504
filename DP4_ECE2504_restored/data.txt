@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////////////////////////////
+// ECE 2504 Design Project 4 (Spring 2015):  Data Memory
+// 
+// This text file contains the initial contents of the data memory in hex.
+// The memory is 16 bits wide, which is 4 hex digits per address.
+//  
+// Modify the contents of this file to use the memory layout described in the
+// Project Specification:
+// - Location 0x0-0x7: Data array
+// 
+// RECOMPILE THE VERILOG PROJECT EACH TIME YOU CHANGE THIS FILE.
+//
+// @<number>" specifies the memory location in hex of the next line of data.
+// The values in the lines that follow are in consecutive locations.
+//
+// Running your program will not change the contents of this file.
+// View the results of your simulation using Qsim.
+////////////////////////////////////////////////////////////////////////////////
+@0
+0099
+0013
+0093
+0091
+0019
+0022
+0013
+0019
+0039

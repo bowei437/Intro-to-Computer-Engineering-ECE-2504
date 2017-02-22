@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Bowei/Desktop/ECE2504/HW3.4/HW3P3.bdf
+source_file = 1, C:/Users/Bowei/Desktop/ECE2504/HW3.4/Waveform.vwf
+source_file = 1, C:/Users/Bowei/Desktop/ECE2504/HW3.4/db/HW3P3.cbx.xml
+design_name = HW3P3
+instance = comp, \F1~output , F1~output, HW3P3, 1
+instance = comp, \F2~output , F2~output, HW3P3, 1
+instance = comp, \C~input , C~input, HW3P3, 1
+instance = comp, \B~input , B~input, HW3P3, 1
+instance = comp, \A~input , A~input, HW3P3, 1
+instance = comp, \D~input , D~input, HW3P3, 1
+instance = comp, \inst10~0 , inst10~0, HW3P3, 1
+instance = comp, \inst14~0 , inst14~0, HW3P3, 1

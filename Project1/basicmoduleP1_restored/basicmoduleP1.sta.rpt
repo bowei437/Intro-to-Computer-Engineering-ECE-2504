@@ -1,0 +1,1183 @@
+TimeQuest Timing Analyzer report for basicmoduleP1
+Sat Mar 14 20:22:02 2015
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; basicmoduleP1                                      ;
+; Device Family      ; Cyclone IV E                                       ;
+; Device Name        ; EP4CE22F17C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++---------------------------------------------------------------------------+
+; Propagation Delay                                                         ;
++------------+--------------------------+--------+--------+--------+--------+
+; Input Port ; Output Port              ; RR     ; RF     ; FR     ; FF     ;
++------------+--------------------------+--------+--------+--------+--------+
+; S0         ; chip_dummy_led_output[0] ; 10.557 ; 10.942 ; 11.416 ; 11.137 ;
+; S0         ; chip_dummy_led_output[1] ; 10.779 ; 11.172 ; 11.638 ; 11.367 ;
+; S0         ; chip_dummy_led_output[2] ; 10.652 ; 10.964 ; 11.643 ; 11.141 ;
+; S0         ; chip_dummy_led_output[3] ; 10.850 ; 10.365 ; 10.966 ; 11.242 ;
+; S0         ; chip_t                   ; 8.342  ;        ;        ; 8.834  ;
+; S0         ; chip_x                   ; 8.408  ;        ;        ; 8.935  ;
+; S1         ; chip_dummy_led_output[0] ; 10.014 ; 10.803 ; 11.204 ; 10.545 ;
+; S1         ; chip_dummy_led_output[1] ; 10.236 ; 11.033 ; 11.426 ; 10.775 ;
+; S1         ; chip_dummy_led_output[2] ; 10.941 ; 10.498 ; 11.163 ; 11.267 ;
+; S1         ; chip_dummy_led_output[3] ; 10.244 ; 10.226 ; 10.790 ; 10.573 ;
+; S1         ; chip_t                   ; 7.876  ;        ;        ; 8.354  ;
+; S1         ; chip_w                   ;        ; 8.691  ; 9.079  ;        ;
+; S1         ; chip_x                   ; 7.797  ;        ;        ; 8.266  ;
+; S2         ; chip_dummy_led_output[0] ; 10.946 ; 10.719 ; 11.205 ; 11.546 ;
+; S2         ; chip_dummy_led_output[1] ; 11.168 ; 10.949 ; 11.427 ; 11.776 ;
+; S2         ; chip_dummy_led_output[2] ; 10.140 ; 11.009 ; 11.684 ; 10.641 ;
+; S2         ; chip_dummy_led_output[3] ; 10.532 ; 10.248 ; 10.987 ; 10.969 ;
+; S2         ; chip_t                   ; 8.119  ;        ;        ; 8.623  ;
+; S2         ; chip_w                   ; 8.821  ;        ;        ; 9.434  ;
+; S3         ; chip_dummy_led_output[0] ; 10.216 ; 10.555 ; 10.941 ; 10.714 ;
+; S3         ; chip_dummy_led_output[1] ; 10.438 ; 10.785 ; 11.163 ; 10.944 ;
+; S3         ; chip_dummy_led_output[2] ; 10.693 ; 9.652  ; 10.135 ; 11.004 ;
+; S3         ; chip_dummy_led_output[3] ; 10.169 ; 9.978  ; 10.527 ; 10.464 ;
+; S3         ; chip_t                   ;        ; 7.634  ; 8.114  ;        ;
+; S3         ; chip_w                   ;        ; 8.443  ; 8.816  ;        ;
+; S3         ; chip_x                   ; 7.727  ;        ;        ; 8.157  ;
+; a          ; chip_dummy_led_output[0] ; 9.603  ; 9.529  ; 10.016 ; 10.084 ;
+; a          ; chip_dummy_led_output[1] ; 9.825  ; 9.207  ; 9.646  ; 10.314 ;
+; a          ; chip_dummy_led_output[2] ; 10.056 ; 9.971  ; 10.497 ; 10.421 ;
+; a          ; chip_dummy_led_output[3] ; 10.254 ; 10.072 ; 10.695 ; 10.522 ;
+; a          ; gate_dummy_led_output[0] ;        ; 7.720  ; 8.111  ;        ;
+; a          ; gate_dummy_led_output[1] ; 7.634  ; 7.654  ; 8.076  ; 8.105  ;
+; a          ; gate_dummy_led_output[2] ;        ; 7.416  ; 7.829  ;        ;
+; a          ; gate_dummy_led_output[3] ; 7.587  ;        ;        ; 8.074  ;
+; a          ; gate_t                   ; 7.938  ;        ;        ; 8.357  ;
+; a          ; gate_u                   ;        ; 7.359  ; 7.783  ;        ;
+; a          ; gate_x                   ; 7.941  ;        ;        ; 8.376  ;
+; a          ; gate_y                   ; 8.770  ;        ;        ; 9.285  ;
+; a          ; gate_z                   ; 7.549  ;        ;        ; 7.953  ;
+; b          ; chip_dummy_led_output[0] ; 10.001 ; 9.785  ; 10.181 ; 10.500 ;
+; b          ; chip_dummy_led_output[1] ; 10.223 ; 10.015 ; 10.403 ; 10.730 ;
+; b          ; chip_dummy_led_output[2] ; 10.455 ; 9.806  ; 10.385 ; 10.802 ;
+; b          ; chip_dummy_led_output[3] ; 10.653 ; 9.208  ; 9.752  ; 10.903 ;
+; b          ; gate_dummy_led_output[0] ;        ; 8.119  ; 8.522  ;        ;
+; b          ; gate_dummy_led_output[1] ; 8.033  ; 8.055  ; 8.495  ; 8.484  ;
+; b          ; gate_dummy_led_output[2] ; 7.778  ;        ;        ; 8.237  ;
+; b          ; gate_dummy_led_output[3] ;        ; 8.019  ; 8.440  ;        ;
+; b          ; gate_t                   ; 8.334  ;        ;        ; 8.772  ;
+; b          ; gate_u                   ; 7.736  ; 7.755  ; 8.197  ; 8.186  ;
+; b          ; gate_v                   ; 7.942  ; 7.895  ; 8.374  ; 8.360  ;
+; b          ; gate_w                   ;        ; 7.986  ; 8.461  ;        ;
+; b          ; gate_x                   ; 8.338  ;        ;        ; 8.790  ;
+; b          ; gate_y                   ; 9.168  ;        ;        ; 9.701  ;
+; b          ; gate_z                   ; 7.948  ;        ;        ; 8.370  ;
+; c          ; chip_dummy_led_output[0] ; 10.091 ; 10.033 ; 10.584 ; 10.622 ;
+; c          ; chip_dummy_led_output[1] ; 10.313 ; 10.122 ; 10.545 ; 10.852 ;
+; c          ; chip_dummy_led_output[2] ; 10.536 ; 10.475 ; 11.065 ; 10.946 ;
+; c          ; chip_dummy_led_output[3] ; 10.734 ; 10.576 ; 11.263 ; 11.047 ;
+; c          ; gate_dummy_led_output[0] ; 8.186  ;        ;        ; 8.725  ;
+; c          ; gate_dummy_led_output[1] ; 8.161  ;        ;        ; 8.660  ;
+; c          ; gate_dummy_led_output[2] ;        ; 7.901  ; 8.416  ;        ;
+; c          ; gate_dummy_led_output[3] ;        ; 8.123  ; 8.612  ;        ;
+; c          ; gate_t                   ; 8.384  ;        ;        ; 8.884  ;
+; c          ; gate_u                   ;        ; 7.852  ; 8.373  ;        ;
+; c          ; gate_v                   ;        ; 8.035  ; 8.564  ;        ;
+; c          ; gate_w                   ; 8.073  ;        ;        ; 8.562  ;
+; c          ; gate_y                   ; 9.258  ;        ;        ; 9.823  ;
+; c          ; gate_z                   ; 7.984  ; 8.033  ; 8.561  ; 8.481  ;
+; d          ; chip_dummy_led_output[0] ; 9.872  ; 9.941  ; 10.393 ; 10.385 ;
+; d          ; chip_dummy_led_output[1] ; 10.035 ; 10.171 ; 10.615 ; 10.615 ;
+; d          ; chip_dummy_led_output[2] ; 10.353 ; 10.182 ; 10.769 ; 10.770 ;
+; d          ; chip_dummy_led_output[3] ; 10.551 ; 10.283 ; 10.967 ; 10.871 ;
+; d          ; gate_dummy_led_output[0] ; 7.973  ;        ;        ; 8.521  ;
+; d          ; gate_dummy_led_output[1] ; 7.918  ;        ;        ; 8.422  ;
+; d          ; gate_dummy_led_output[2] ; 7.695  ;        ;        ; 8.202  ;
+; d          ; gate_t                   ;        ; 8.223  ; 8.742  ;        ;
+; d          ; gate_u                   ; 7.643  ; 7.583  ; 8.073  ; 8.162  ;
+; d          ; gate_v                   ; 7.537  ; 7.493  ; 8.043  ; 7.990  ;
+; d          ; gate_w                   ;        ; 7.598  ; 8.145  ;        ;
+; d          ; gate_x                   ; 8.167  ;        ;        ; 8.683  ;
+; d          ; gate_y                   ; 8.980  ; 9.142  ; 9.560  ; 9.586  ;
+; d          ; gate_z                   ; 7.808  ;        ;        ; 8.261  ;
++------------+--------------------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Propagation Delay                                               ;
++------------+--------------------------+-------+-------+--------+--------+
+; Input Port ; Output Port              ; RR    ; RF    ; FR     ; FF     ;
++------------+--------------------------+-------+-------+--------+--------+
+; S0         ; chip_dummy_led_output[0] ; 8.430 ; 9.128 ; 9.683  ; 8.902  ;
+; S0         ; chip_dummy_led_output[1] ; 9.285 ; 8.365 ; 8.849  ; 9.784  ;
+; S0         ; chip_dummy_led_output[2] ; 9.246 ; 8.766 ; 9.325  ; 9.772  ;
+; S0         ; chip_dummy_led_output[3] ; 8.812 ; 9.671 ; 10.283 ; 9.307  ;
+; S0         ; chip_t                   ; 8.004 ;       ;        ; 8.493  ;
+; S0         ; chip_x                   ; 8.066 ;       ;        ; 8.567  ;
+; S1         ; chip_dummy_led_output[0] ; 9.049 ; 7.948 ; 8.444  ; 9.509  ;
+; S1         ; chip_dummy_led_output[1] ; 8.810 ; 9.000 ; 9.496  ; 9.267  ;
+; S1         ; chip_dummy_led_output[2] ; 8.660 ; 8.628 ; 9.186  ; 9.095  ;
+; S1         ; chip_dummy_led_output[3] ; 8.337 ; 8.523 ; 9.023  ; 8.790  ;
+; S1         ; chip_t                   ; 7.589 ;       ;        ; 8.022  ;
+; S1         ; chip_w                   ;       ; 8.365 ; 8.749  ;        ;
+; S1         ; chip_x                   ; 7.527 ;       ;        ; 7.984  ;
+; S2         ; chip_dummy_led_output[0] ; 9.803 ; 8.958 ; 9.516  ; 10.374 ;
+; S2         ; chip_dummy_led_output[1] ; 9.115 ; 9.629 ; 10.134 ; 9.617  ;
+; S2         ; chip_dummy_led_output[2] ; 9.076 ; 8.906 ; 9.454  ; 9.605  ;
+; S2         ; chip_dummy_led_output[3] ; 8.642 ; 9.501 ; 10.116 ; 9.140  ;
+; S2         ; chip_t                   ; 7.834 ;       ;        ; 8.326  ;
+; S2         ; chip_w                   ; 8.560 ;       ;        ; 9.159  ;
+; S3         ; chip_dummy_led_output[0] ; 8.108 ; 9.249 ; 9.632  ; 8.539  ;
+; S3         ; chip_dummy_led_output[1] ; 8.744 ; 8.056 ; 8.504  ; 9.162  ;
+; S3         ; chip_dummy_led_output[2] ; 8.494 ; 8.457 ; 8.980  ; 8.909  ;
+; S3         ; chip_dummy_led_output[3] ; 8.271 ; 8.184 ; 8.648  ; 8.685  ;
+; S3         ; chip_t                   ;       ; 7.370 ; 7.840  ;        ;
+; S3         ; chip_w                   ;       ; 8.199 ; 8.563  ;        ;
+; S3         ; chip_x                   ; 7.461 ;       ;        ; 7.879  ;
+; a          ; chip_dummy_led_output[0] ; 8.180 ; 8.611 ; 8.971  ; 8.579  ;
+; a          ; chip_dummy_led_output[1] ; 8.491 ; 8.052 ; 8.469  ; 8.917  ;
+; a          ; chip_dummy_led_output[2] ; 8.484 ; 7.947 ; 8.418  ; 8.924  ;
+; a          ; chip_dummy_led_output[3] ; 7.813 ; 7.787 ; 8.268  ; 8.189  ;
+; a          ; gate_dummy_led_output[0] ;       ; 7.458 ; 7.838  ;        ;
+; a          ; gate_dummy_led_output[1] ; 7.373 ; 7.394 ; 7.802  ; 7.832  ;
+; a          ; gate_dummy_led_output[2] ;       ; 7.165 ; 7.566  ;        ;
+; a          ; gate_dummy_led_output[3] ; 7.330 ;       ;        ; 7.803  ;
+; a          ; gate_t                   ; 7.668 ;       ;        ; 8.074  ;
+; a          ; gate_u                   ;       ; 7.108 ; 7.520  ;        ;
+; a          ; gate_x                   ; 7.671 ;       ;        ; 8.092  ;
+; a          ; gate_y                   ; 8.517 ;       ;        ; 9.018  ;
+; a          ; gate_z                   ; 7.291 ;       ;        ; 7.683  ;
+; b          ; chip_dummy_led_output[0] ; 8.391 ; 7.980 ; 8.418  ; 8.802  ;
+; b          ; chip_dummy_led_output[1] ; 7.891 ; 8.432 ; 8.868  ; 8.354  ;
+; b          ; chip_dummy_led_output[2] ; 8.367 ; 8.610 ; 9.073  ; 8.755  ;
+; b          ; chip_dummy_led_output[3] ; 8.269 ; 8.167 ; 8.667  ; 8.658  ;
+; b          ; gate_dummy_led_output[0] ;       ; 7.841 ; 8.233  ;        ;
+; b          ; gate_dummy_led_output[1] ; 7.756 ; 7.776 ; 8.203  ; 8.195  ;
+; b          ; gate_dummy_led_output[2] ; 7.509 ;       ;        ; 7.957  ;
+; b          ; gate_dummy_led_output[3] ;       ; 7.745 ; 8.154  ;        ;
+; b          ; gate_t                   ; 8.046 ;       ;        ; 8.472  ;
+; b          ; gate_u                   ; 7.466 ; 7.487 ; 7.917  ; 7.906  ;
+; b          ; gate_v                   ; 7.668 ; 7.623 ; 8.088  ; 8.074  ;
+; b          ; gate_w                   ;       ; 7.708 ; 8.173  ;        ;
+; b          ; gate_x                   ; 8.051 ;       ;        ; 8.490  ;
+; b          ; gate_y                   ; 8.897 ;       ;        ; 9.417  ;
+; b          ; gate_z                   ; 7.671 ;       ;        ; 8.082  ;
+; c          ; chip_dummy_led_output[0] ; 8.779 ; 8.314 ; 8.829  ; 9.333  ;
+; c          ; chip_dummy_led_output[1] ; 8.538 ; 8.466 ; 8.974  ; 9.027  ;
+; c          ; chip_dummy_led_output[2] ; 8.744 ; 8.591 ; 9.160  ; 9.191  ;
+; c          ; chip_dummy_led_output[3] ; 8.243 ; 8.200 ; 8.730  ; 8.657  ;
+; c          ; gate_dummy_led_output[0] ; 7.903 ;       ;        ; 8.427  ;
+; c          ; gate_dummy_led_output[1] ; 7.817 ;       ;        ; 8.311  ;
+; c          ; gate_dummy_led_output[2] ;       ; 7.626 ; 8.129  ;        ;
+; c          ; gate_dummy_led_output[3] ;       ; 7.827 ; 8.301  ;        ;
+; c          ; gate_t                   ; 8.078 ;       ;        ; 8.559  ;
+; c          ; gate_u                   ;       ; 7.529 ; 8.008  ;        ;
+; c          ; gate_v                   ;       ; 7.745 ; 8.249  ;        ;
+; c          ; gate_w                   ; 7.778 ;       ;        ; 8.247  ;
+; c          ; gate_y                   ; 8.930 ;       ;        ; 9.523  ;
+; c          ; gate_z                   ; 7.705 ; 7.752 ; 8.266  ; 8.188  ;
+; d          ; chip_dummy_led_output[0] ; 8.149 ; 8.482 ; 8.985  ; 8.596  ;
+; d          ; chip_dummy_led_output[1] ; 8.690 ; 8.249 ; 8.757  ; 9.205  ;
+; d          ; chip_dummy_led_output[2] ; 8.232 ; 8.218 ; 8.716  ; 8.711  ;
+; d          ; chip_dummy_led_output[3] ; 7.879 ; 7.846 ; 8.363  ; 8.339  ;
+; d          ; gate_dummy_led_output[0] ; 7.635 ;       ;        ; 8.170  ;
+; d          ; gate_dummy_led_output[1] ; 7.585 ;       ;        ; 8.088  ;
+; d          ; gate_dummy_led_output[2] ; 7.429 ;       ;        ; 7.924  ;
+; d          ; gate_t                   ;       ; 7.874 ; 8.382  ;        ;
+; d          ; gate_u                   ; 7.314 ; 7.319 ; 7.797  ; 7.821  ;
+; d          ; gate_v                   ; 7.276 ; 7.233 ; 7.769  ; 7.717  ;
+; d          ; gate_w                   ;       ; 7.334 ; 7.870  ;        ;
+; d          ; gate_x                   ; 7.873 ;       ;        ; 8.362  ;
+; d          ; gate_y                   ; 8.716 ; 8.873 ; 9.280  ; 9.306  ;
+; d          ; gate_z                   ; 7.488 ;       ;        ; 7.971  ;
++------------+--------------------------+-------+-------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------------------+
+; Propagation Delay                                                       ;
++------------+--------------------------+-------+-------+--------+--------+
+; Input Port ; Output Port              ; RR    ; RF    ; FR     ; FF     ;
++------------+--------------------------+-------+-------+--------+--------+
+; S0         ; chip_dummy_led_output[0] ; 9.407 ; 9.772 ; 10.107 ; 9.867  ;
+; S0         ; chip_dummy_led_output[1] ; 9.587 ; 9.968 ; 10.287 ; 10.063 ;
+; S0         ; chip_dummy_led_output[2] ; 9.457 ; 9.832 ; 10.255 ; 9.927  ;
+; S0         ; chip_dummy_led_output[3] ; 9.656 ; 9.267 ; 9.669  ; 9.982  ;
+; S0         ; chip_t                   ; 7.425 ;       ;        ; 7.786  ;
+; S0         ; chip_x                   ; 7.479 ;       ;        ; 7.858  ;
+; S1         ; chip_dummy_led_output[0] ; 8.937 ; 9.626 ; 9.961  ; 9.333  ;
+; S1         ; chip_dummy_led_output[1] ; 9.117 ; 9.822 ; 10.141 ; 9.529  ;
+; S1         ; chip_dummy_led_output[2] ; 9.685 ; 9.405 ; 9.816  ; 10.056 ;
+; S1         ; chip_dummy_led_output[3] ; 9.100 ; 9.121 ; 9.546  ; 9.383  ;
+; S1         ; chip_t                   ; 6.998 ;       ;        ; 7.347  ;
+; S1         ; chip_w                   ;       ; 7.632 ; 8.001  ;        ;
+; S1         ; chip_x                   ; 6.923 ;       ;        ; 7.259  ;
+; S2         ; chip_dummy_led_output[0] ; 9.795 ; 9.574 ; 9.910  ; 10.242 ;
+; S2         ; chip_dummy_led_output[1] ; 9.975 ; 9.770 ; 10.090 ; 10.438 ;
+; S2         ; chip_dummy_led_output[2] ; 8.991 ; 9.890 ; 10.301 ; 9.469  ;
+; S2         ; chip_dummy_led_output[3] ; 9.380 ; 9.147 ; 9.692  ; 9.737  ;
+; S2         ; chip_t                   ; 7.227 ;       ;        ; 7.589  ;
+; S2         ; chip_w                   ; 7.835 ;       ;        ; 8.248  ;
+; S3         ; chip_dummy_led_output[0] ; 9.074 ; 9.404 ; 9.733  ; 9.513  ;
+; S3         ; chip_dummy_led_output[1] ; 9.254 ; 9.600 ; 9.913  ; 9.709  ;
+; S3         ; chip_dummy_led_output[2] ; 9.463 ; 8.633 ; 8.930  ; 9.828  ;
+; S3         ; chip_dummy_led_output[3] ; 9.034 ; 8.899 ; 9.318  ; 9.283  ;
+; S3         ; chip_t                   ;       ; 6.753 ; 7.166  ;        ;
+; S3         ; chip_w                   ;       ; 7.410 ; 7.773  ;        ;
+; S3         ; chip_x                   ; 6.857 ;       ;        ; 7.159  ;
+; a          ; chip_dummy_led_output[0] ; 8.576 ; 8.536 ; 8.849  ; 8.926  ;
+; a          ; chip_dummy_led_output[1] ; 8.756 ; 8.227 ; 8.494  ; 9.122  ;
+; a          ; chip_dummy_led_output[2] ; 8.891 ; 8.958 ; 9.224  ; 9.299  ;
+; a          ; chip_dummy_led_output[3] ; 9.090 ; 9.013 ; 9.423  ; 9.354  ;
+; a          ; gate_dummy_led_output[0] ;       ; 6.872 ; 7.133  ;        ;
+; a          ; gate_dummy_led_output[1] ; 6.755 ; 6.809 ; 7.090  ; 7.152  ;
+; a          ; gate_dummy_led_output[2] ;       ; 6.582 ; 6.873  ;        ;
+; a          ; gate_dummy_led_output[3] ; 6.701 ;       ;        ; 7.142  ;
+; a          ; gate_t                   ; 7.088 ;       ;        ; 7.355  ;
+; a          ; gate_u                   ;       ; 6.529 ; 6.820  ;        ;
+; a          ; gate_x                   ; 7.092 ;       ;        ; 7.345  ;
+; a          ; gate_y                   ; 7.790 ;       ;        ; 8.126  ;
+; a          ; gate_z                   ; 6.720 ;       ;        ; 6.981  ;
+; b          ; chip_dummy_led_output[0] ; 8.911 ; 8.701 ; 8.994  ; 9.280  ;
+; b          ; chip_dummy_led_output[1] ; 9.091 ; 8.897 ; 9.174  ; 9.476  ;
+; b          ; chip_dummy_led_output[2] ; 9.224 ; 8.762 ; 9.122  ; 9.625  ;
+; b          ; chip_dummy_led_output[3] ; 9.423 ; 8.196 ; 8.577  ; 9.680  ;
+; b          ; gate_dummy_led_output[0] ;       ; 7.217 ; 7.486  ;        ;
+; b          ; gate_dummy_led_output[1] ; 7.089 ; 7.145 ; 7.450  ; 7.475  ;
+; b          ; gate_dummy_led_output[2] ; 6.867 ;       ;        ; 7.246  ;
+; b          ; gate_dummy_led_output[3] ;       ; 7.134 ; 7.398  ;        ;
+; b          ; gate_t                   ; 7.428 ;       ;        ; 7.714  ;
+; b          ; gate_u                   ; 6.816 ; 6.869 ; 7.174  ; 7.200  ;
+; b          ; gate_v                   ; 7.043 ; 6.973 ; 7.377  ; 7.336  ;
+; b          ; gate_w                   ;       ; 7.058 ; 7.454  ;        ;
+; b          ; gate_x                   ; 7.426 ;       ;        ; 7.703  ;
+; b          ; gate_y                   ; 8.125 ;       ;        ; 8.480  ;
+; b          ; gate_z                   ; 7.055 ;       ;        ; 7.336  ;
+; c          ; chip_dummy_led_output[0] ; 8.972 ; 8.943 ; 9.337  ; 9.386  ;
+; c          ; chip_dummy_led_output[1] ; 9.152 ; 8.953 ; 9.320  ; 9.582  ;
+; c          ; chip_dummy_led_output[2] ; 9.273 ; 9.365 ; 9.712  ; 9.746  ;
+; c          ; chip_dummy_led_output[3] ; 9.472 ; 9.420 ; 9.911  ; 9.801  ;
+; c          ; gate_dummy_led_output[0] ; 7.220 ;       ;        ; 7.694  ;
+; c          ; gate_dummy_led_output[1] ; 7.184 ;       ;        ; 7.629  ;
+; c          ; gate_dummy_led_output[2] ;       ; 6.974 ; 7.381  ;        ;
+; c          ; gate_dummy_led_output[3] ;       ; 7.207 ; 7.547  ;        ;
+; c          ; gate_t                   ; 7.452 ;       ;        ; 7.809  ;
+; c          ; gate_u                   ;       ; 6.936 ; 7.325  ;        ;
+; c          ; gate_v                   ;       ; 7.076 ; 7.540  ;        ;
+; c          ; gate_w                   ; 7.140 ;       ;        ; 7.504  ;
+; c          ; gate_y                   ; 8.186 ;       ;        ; 8.586  ;
+; c          ; gate_z                   ; 7.065 ; 7.068 ; 7.547  ; 7.430  ;
+; d          ; chip_dummy_led_output[0] ; 8.759 ; 8.835 ; 9.217  ; 9.184  ;
+; d          ; chip_dummy_led_output[1] ; 8.922 ; 9.031 ; 9.397  ; 9.380  ;
+; d          ; chip_dummy_led_output[2] ; 9.134 ; 9.124 ; 9.460  ; 9.600  ;
+; d          ; chip_dummy_led_output[3] ; 9.333 ; 9.179 ; 9.659  ; 9.655  ;
+; d          ; gate_dummy_led_output[0] ; 7.051 ;       ;        ; 7.532  ;
+; d          ; gate_dummy_led_output[1] ; 6.990 ;       ;        ; 7.425  ;
+; d          ; gate_dummy_led_output[2] ; 6.796 ;       ;        ; 7.222  ;
+; d          ; gate_t                   ;       ; 7.277 ; 7.749  ;        ;
+; d          ; gate_u                   ; 6.735 ; 6.716 ; 7.075  ; 7.190  ;
+; d          ; gate_v                   ; 6.680 ; 6.612 ; 7.091  ; 7.015  ;
+; d          ; gate_w                   ;       ; 6.709 ; 7.184  ;        ;
+; d          ; gate_x                   ; 7.274 ;       ;        ; 7.616  ;
+; d          ; gate_y                   ; 7.956 ; 8.035 ; 8.431  ; 8.384  ;
+; d          ; gate_z                   ; 6.932 ;       ;        ; 7.249  ;
++------------+--------------------------+-------+-------+--------+--------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Propagation Delay                                             ;
++------------+--------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port              ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------------------+-------+-------+-------+-------+
+; S0         ; chip_dummy_led_output[0] ; 7.484 ; 8.140 ; 8.559 ; 7.871 ;
+; S0         ; chip_dummy_led_output[1] ; 8.253 ; 7.447 ; 7.802 ; 8.647 ;
+; S0         ; chip_dummy_led_output[2] ; 8.180 ; 7.837 ; 8.206 ; 8.690 ;
+; S0         ; chip_dummy_led_output[3] ; 7.835 ; 8.622 ; 9.069 ; 8.220 ;
+; S0         ; chip_t                   ; 7.114 ;       ;       ; 7.475 ;
+; S0         ; chip_x                   ; 7.164 ;       ;       ; 7.525 ;
+; S1         ; chip_dummy_led_output[0] ; 8.044 ; 7.060 ; 7.444 ; 8.426 ;
+; S1         ; chip_dummy_led_output[1] ; 7.800 ; 7.985 ; 8.377 ; 8.174 ;
+; S1         ; chip_dummy_led_output[2] ; 7.648 ; 7.687 ; 8.068 ; 8.071 ;
+; S1         ; chip_dummy_led_output[3] ; 7.382 ; 7.558 ; 7.959 ; 7.747 ;
+; S1         ; chip_t                   ; 6.732 ;       ;       ; 7.046 ;
+; S1         ; chip_w                   ;       ; 7.340 ; 7.700 ;       ;
+; S1         ; chip_x                   ; 6.676 ;       ;       ; 7.002 ;
+; S2         ; chip_dummy_led_output[0] ; 8.748 ; 7.991 ; 8.402 ; 9.166 ;
+; S2         ; chip_dummy_led_output[1] ; 8.104 ; 8.579 ; 8.952 ; 8.490 ;
+; S2         ; chip_dummy_led_output[2] ; 8.031 ; 7.965 ; 8.305 ; 8.533 ;
+; S2         ; chip_dummy_led_output[3] ; 7.686 ; 8.473 ; 8.912 ; 8.063 ;
+; S2         ; chip_t                   ; 6.965 ;       ;       ; 7.318 ;
+; S2         ; chip_w                   ; 7.594 ;       ;       ; 7.997 ;
+; S3         ; chip_dummy_led_output[0] ; 7.186 ; 8.211 ; 8.521 ; 7.535 ;
+; S3         ; chip_dummy_led_output[1] ; 7.736 ; 7.152 ; 7.481 ; 8.079 ;
+; S3         ; chip_dummy_led_output[2] ; 7.495 ; 7.542 ; 7.885 ; 7.911 ;
+; S3         ; chip_dummy_led_output[3] ; 7.318 ; 7.256 ; 7.635 ; 7.652 ;
+; S3         ; chip_t                   ;       ; 6.511 ; 6.914 ;       ;
+; S3         ; chip_w                   ;       ; 7.187 ; 7.540 ;       ;
+; S3         ; chip_x                   ; 6.612 ;       ;       ; 6.907 ;
+; a          ; chip_dummy_led_output[0] ; 7.247 ; 7.655 ; 7.934 ; 7.562 ;
+; a          ; chip_dummy_led_output[1] ; 7.542 ; 7.168 ; 7.452 ; 7.866 ;
+; a          ; chip_dummy_led_output[2] ; 7.512 ; 7.081 ; 7.379 ; 7.900 ;
+; a          ; chip_dummy_led_output[3] ; 6.907 ; 6.926 ; 7.274 ; 7.212 ;
+; a          ; gate_dummy_led_output[0] ;       ; 6.631 ; 6.884 ;       ;
+; a          ; gate_dummy_led_output[1] ; 6.516 ; 6.569 ; 6.842 ; 6.901 ;
+; a          ; gate_dummy_led_output[2] ;       ; 6.349 ; 6.633 ;       ;
+; a          ; gate_dummy_led_output[3] ; 6.466 ;       ;       ; 6.894 ;
+; a          ; gate_t                   ; 6.837 ;       ;       ; 7.098 ;
+; a          ; gate_u                   ;       ; 6.297 ; 6.581 ;       ;
+; a          ; gate_x                   ; 6.843 ;       ;       ; 7.089 ;
+; a          ; gate_y                   ; 7.556 ;       ;       ; 7.883 ;
+; a          ; gate_z                   ; 6.480 ;       ;       ; 6.735 ;
+; b          ; chip_dummy_led_output[0] ; 7.445 ; 7.085 ; 7.414 ; 7.788 ;
+; b          ; chip_dummy_led_output[1] ; 6.982 ; 7.488 ; 7.790 ; 7.373 ;
+; b          ; chip_dummy_led_output[2] ; 7.386 ; 7.680 ; 7.950 ; 7.763 ;
+; b          ; chip_dummy_led_output[3] ; 7.303 ; 7.246 ; 7.612 ; 7.635 ;
+; b          ; gate_dummy_led_output[0] ;       ; 6.962 ; 7.222 ;       ;
+; b          ; gate_dummy_led_output[1] ; 6.836 ; 6.889 ; 7.186 ; 7.213 ;
+; b          ; gate_dummy_led_output[2] ; 6.620 ;       ;       ; 6.991 ;
+; b          ; gate_dummy_led_output[3] ;       ; 6.883 ; 7.139 ;       ;
+; b          ; gate_t                   ; 7.162 ;       ;       ; 7.441 ;
+; b          ; gate_u                   ; 6.571 ; 6.624 ; 6.920 ; 6.944 ;
+; b          ; gate_v                   ; 6.791 ; 6.723 ; 7.116 ; 7.076 ;
+; b          ; gate_w                   ;       ; 6.804 ; 7.190 ;       ;
+; b          ; gate_x                   ; 7.163 ;       ;       ; 7.432 ;
+; b          ; gate_y                   ; 7.875 ;       ;       ; 8.221 ;
+; b          ; gate_z                   ; 6.800 ;       ;       ; 7.073 ;
+; c          ; chip_dummy_led_output[0] ; 7.819 ; 7.388 ; 7.773 ; 8.224 ;
+; c          ; chip_dummy_led_output[1] ; 7.529 ; 7.498 ; 7.881 ; 7.965 ;
+; c          ; chip_dummy_led_output[2] ; 7.689 ; 7.664 ; 8.040 ; 8.141 ;
+; c          ; chip_dummy_led_output[3] ; 7.298 ; 7.256 ; 7.676 ; 7.637 ;
+; c          ; gate_dummy_led_output[0] ; 6.961 ;       ;       ; 7.422 ;
+; c          ; gate_dummy_led_output[1] ; 6.874 ;       ;       ; 7.308 ;
+; c          ; gate_dummy_led_output[2] ;       ; 6.725 ; 7.119 ;       ;
+; c          ; gate_dummy_led_output[3] ;       ; 6.934 ; 7.266 ;       ;
+; c          ; gate_t                   ; 7.170 ;       ;       ; 7.514 ;
+; c          ; gate_u                   ;       ; 6.641 ; 6.995 ;       ;
+; c          ; gate_v                   ;       ; 6.815 ; 7.252 ;       ;
+; c          ; gate_w                   ; 6.868 ;       ;       ; 7.219 ;
+; c          ; gate_y                   ; 7.885 ;       ;       ; 8.312 ;
+; c          ; gate_z                   ; 6.810 ; 6.812 ; 7.277 ; 7.164 ;
+; d          ; chip_dummy_led_output[0] ; 7.228 ; 7.550 ; 7.935 ; 7.592 ;
+; d          ; chip_dummy_led_output[1] ; 7.699 ; 7.324 ; 7.698 ; 8.112 ;
+; d          ; chip_dummy_led_output[2] ; 7.248 ; 7.329 ; 7.642 ; 7.729 ;
+; d          ; chip_dummy_led_output[3] ; 6.954 ; 6.959 ; 7.348 ; 7.359 ;
+; d          ; gate_dummy_led_output[0] ; 6.744 ;       ;       ; 7.211 ;
+; d          ; gate_dummy_led_output[1] ; 6.688 ;       ;       ; 7.123 ;
+; d          ; gate_dummy_led_output[2] ; 6.553 ;       ;       ; 6.967 ;
+; d          ; gate_t                   ;       ; 6.962 ; 7.420 ;       ;
+; d          ; gate_u                   ; 6.438 ; 6.474 ; 6.824 ; 6.879 ;
+; d          ; gate_v                   ; 6.440 ; 6.374 ; 6.840 ; 6.768 ;
+; d          ; gate_w                   ;       ; 6.468 ; 6.930 ;       ;
+; d          ; gate_x                   ; 7.003 ;       ;       ; 7.327 ;
+; d          ; gate_y                   ; 7.713 ; 7.789 ; 8.174 ; 8.129 ;
+; d          ; gate_z                   ; 6.636 ;       ;       ; 6.981 ;
++------------+--------------------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------------------+
+; Propagation Delay                                                     ;
++------------+--------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port              ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------------------+-------+-------+-------+-------+
+; S0         ; chip_dummy_led_output[0] ; 6.172 ; 6.288 ; 7.103 ; 6.819 ;
+; S0         ; chip_dummy_led_output[1] ; 6.276 ; 6.404 ; 7.207 ; 6.935 ;
+; S0         ; chip_dummy_led_output[2] ; 6.254 ; 6.259 ; 7.215 ; 6.784 ;
+; S0         ; chip_dummy_led_output[3] ; 6.338 ; 5.943 ; 6.826 ; 6.847 ;
+; S0         ; chip_t                   ; 4.853 ;       ;       ; 5.606 ;
+; S0         ; chip_x                   ; 4.902 ;       ;       ; 5.687 ;
+; S1         ; chip_dummy_led_output[0] ; 5.843 ; 6.258 ; 6.866 ; 6.416 ;
+; S1         ; chip_dummy_led_output[1] ; 5.947 ; 6.374 ; 6.970 ; 6.532 ;
+; S1         ; chip_dummy_led_output[2] ; 6.438 ; 5.964 ; 6.881 ; 6.756 ;
+; S1         ; chip_dummy_led_output[3] ; 5.991 ; 5.913 ; 6.629 ; 6.401 ;
+; S1         ; chip_t                   ; 4.558 ;       ;       ; 5.272 ;
+; S1         ; chip_w                   ;       ; 5.290 ; 5.789 ;       ;
+; S1         ; chip_x                   ; 4.527 ;       ;       ; 5.241 ;
+; S2         ; chip_dummy_led_output[0] ; 6.380 ; 6.141 ; 6.947 ; 7.050 ;
+; S2         ; chip_dummy_led_output[1] ; 6.484 ; 6.257 ; 7.051 ; 7.166 ;
+; S2         ; chip_dummy_led_output[2] ; 5.956 ; 6.270 ; 7.230 ; 6.464 ;
+; S2         ; chip_dummy_led_output[3] ; 6.143 ; 5.874 ; 6.783 ; 6.705 ;
+; S2         ; chip_t                   ; 4.706 ;       ;       ; 5.450 ;
+; S2         ; chip_w                   ; 5.303 ;       ;       ; 6.082 ;
+; S3         ; chip_dummy_led_output[0] ; 6.014 ; 6.114 ; 6.705 ; 6.469 ;
+; S3         ; chip_dummy_led_output[1] ; 6.118 ; 6.230 ; 6.809 ; 6.585 ;
+; S3         ; chip_dummy_led_output[2] ; 6.294 ; 5.531 ; 6.284 ; 6.595 ;
+; S3         ; chip_dummy_led_output[3] ; 5.916 ; 5.769 ; 6.468 ; 6.338 ;
+; S3         ; chip_t                   ;       ; 4.517 ; 5.034 ;       ;
+; S3         ; chip_w                   ;       ; 5.146 ; 5.628 ;       ;
+; S3         ; chip_x                   ; 4.480 ;       ;       ; 5.178 ;
+; a          ; chip_dummy_led_output[0] ; 5.652 ; 5.445 ; 6.261 ; 6.163 ;
+; a          ; chip_dummy_led_output[1] ; 5.719 ; 5.301 ; 6.051 ; 6.279 ;
+; a          ; chip_dummy_led_output[2] ; 5.927 ; 5.680 ; 6.536 ; 6.296 ;
+; a          ; chip_dummy_led_output[3] ; 6.011 ; 5.743 ; 6.620 ; 6.359 ;
+; a          ; gate_dummy_led_output[0] ;       ; 4.460 ; 5.164 ;       ;
+; a          ; gate_dummy_led_output[1] ; 4.530 ; 4.451 ; 5.139 ; 5.067 ;
+; a          ; gate_dummy_led_output[2] ;       ; 4.282 ; 4.955 ;       ;
+; a          ; gate_dummy_led_output[3] ; 4.493 ;       ;       ; 5.018 ;
+; a          ; gate_t                   ; 4.587 ;       ;       ; 5.314 ;
+; a          ; gate_u                   ;       ; 4.263 ; 4.941 ;       ;
+; a          ; gate_x                   ; 4.588 ;       ;       ; 5.316 ;
+; a          ; gate_y                   ; 5.292 ;       ;       ; 6.025 ;
+; a          ; gate_z                   ; 4.359 ;       ;       ; 5.032 ;
+; b          ; chip_dummy_led_output[0] ; 5.870 ; 5.625 ; 6.356 ; 6.416 ;
+; b          ; chip_dummy_led_output[1] ; 5.938 ; 5.741 ; 6.460 ; 6.532 ;
+; b          ; chip_dummy_led_output[2] ; 6.145 ; 5.594 ; 6.455 ; 6.529 ;
+; b          ; chip_dummy_led_output[3] ; 6.229 ; 5.280 ; 6.091 ; 6.592 ;
+; b          ; gate_dummy_led_output[0] ;       ; 4.678 ; 5.415 ;       ;
+; b          ; gate_dummy_led_output[1] ; 4.748 ; 4.672 ; 5.393 ; 5.298 ;
+; b          ; gate_dummy_led_output[2] ; 4.559 ;       ;       ; 5.123 ;
+; b          ; gate_dummy_led_output[3] ;       ; 4.620 ; 5.351 ;       ;
+; b          ; gate_t                   ; 4.804 ;       ;       ; 5.565 ;
+; b          ; gate_u                   ; 4.547 ; 4.480 ; 5.191 ; 5.106 ;
+; b          ; gate_v                   ; 4.579 ; 4.645 ; 5.206 ; 5.291 ;
+; b          ; gate_w                   ;       ; 4.693 ; 5.256 ;       ;
+; b          ; gate_x                   ; 4.807 ;       ;       ; 5.568 ;
+; b          ; gate_y                   ; 5.511 ;       ;       ; 6.278 ;
+; b          ; gate_z                   ; 4.579 ;       ;       ; 5.285 ;
+; c          ; chip_dummy_led_output[0] ; 5.893 ; 5.704 ; 6.582 ; 6.470 ;
+; c          ; chip_dummy_led_output[1] ; 5.971 ; 5.809 ; 6.496 ; 6.586 ;
+; c          ; chip_dummy_led_output[2] ; 6.168 ; 5.939 ; 6.857 ; 6.601 ;
+; c          ; chip_dummy_led_output[3] ; 6.252 ; 6.002 ; 6.941 ; 6.664 ;
+; c          ; gate_dummy_led_output[0] ; 4.819 ;       ;       ; 5.393 ;
+; c          ; gate_dummy_led_output[1] ; 4.799 ;       ;       ; 5.391 ;
+; c          ; gate_dummy_led_output[2] ;       ; 4.536 ; 5.287 ;       ;
+; c          ; gate_dummy_led_output[3] ;       ; 4.664 ; 5.434 ;       ;
+; c          ; gate_t                   ; 4.818 ;       ;       ; 5.616 ;
+; c          ; gate_u                   ;       ; 4.523 ; 5.273 ;       ;
+; c          ; gate_v                   ;       ; 4.701 ; 5.305 ;       ;
+; c          ; gate_w                   ; 4.642 ;       ;       ; 5.387 ;
+; c          ; gate_y                   ; 5.544 ;       ;       ; 6.332 ;
+; c          ; gate_z                   ; 4.582 ; 4.693 ; 5.299 ; 5.333 ;
+; d          ; chip_dummy_led_output[0] ; 5.806 ; 5.712 ; 6.424 ; 6.331 ;
+; d          ; chip_dummy_led_output[1] ; 5.829 ; 5.828 ; 6.528 ; 6.447 ;
+; d          ; chip_dummy_led_output[2] ; 6.081 ; 5.789 ; 6.678 ; 6.490 ;
+; d          ; chip_dummy_led_output[3] ; 6.165 ; 5.852 ; 6.762 ; 6.553 ;
+; d          ; gate_dummy_led_output[0] ; 4.718 ;       ;       ; 5.275 ;
+; d          ; gate_dummy_led_output[1] ; 4.675 ;       ;       ; 5.240 ;
+; d          ; gate_dummy_led_output[2] ; 4.508 ;       ;       ; 5.089 ;
+; d          ; gate_t                   ;       ; 4.871 ; 5.404 ;       ;
+; d          ; gate_u                   ; 4.496 ; 4.385 ; 5.097 ; 5.078 ;
+; d          ; gate_v                   ; 4.349 ; 4.419 ; 4.992 ; 5.055 ;
+; d          ; gate_w                   ;       ; 4.478 ; 5.056 ;       ;
+; d          ; gate_x                   ; 4.706 ;       ;       ; 5.484 ;
+; d          ; gate_y                   ; 5.402 ; 5.574 ; 6.101 ; 6.193 ;
+; d          ; gate_z                   ; 4.496 ;       ;       ; 5.199 ;
++------------+--------------------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Propagation Delay                                             ;
++------------+--------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port              ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------------------+-------+-------+-------+-------+
+; S0         ; chip_dummy_led_output[0] ; 5.016 ; 5.280 ; 6.102 ; 5.537 ;
+; S0         ; chip_dummy_led_output[1] ; 5.462 ; 4.839 ; 5.623 ; 6.029 ;
+; S0         ; chip_dummy_led_output[2] ; 5.484 ; 5.064 ; 5.892 ; 6.012 ;
+; S0         ; chip_dummy_led_output[3] ; 5.189 ; 5.568 ; 6.412 ; 5.787 ;
+; S0         ; chip_t                   ; 4.657 ;       ;       ; 5.401 ;
+; S0         ; chip_x                   ; 4.703 ;       ;       ; 5.463 ;
+; S1         ; chip_dummy_led_output[0] ; 5.324 ; 4.598 ; 5.334 ; 5.807 ;
+; S1         ; chip_dummy_led_output[1] ; 5.152 ; 5.191 ; 5.890 ; 5.677 ;
+; S1         ; chip_dummy_led_output[2] ; 5.120 ; 4.950 ; 5.752 ; 5.563 ;
+; S1         ; chip_dummy_led_output[3] ; 4.879 ; 4.949 ; 5.617 ; 5.435 ;
+; S1         ; chip_t                   ; 4.394 ;       ;       ; 5.077 ;
+; S1         ; chip_w                   ;       ; 5.103 ; 5.597 ;       ;
+; S1         ; chip_x                   ; 4.370 ;       ;       ; 5.072 ;
+; S2         ; chip_dummy_led_output[0] ; 5.746 ; 5.166 ; 5.974 ; 6.364 ;
+; S2         ; chip_dummy_led_output[1] ; 5.348 ; 5.527 ; 6.289 ; 5.866 ;
+; S2         ; chip_dummy_led_output[2] ; 5.370 ; 5.120 ; 5.937 ; 5.884 ;
+; S2         ; chip_dummy_led_output[3] ; 5.075 ; 5.454 ; 6.284 ; 5.659 ;
+; S2         ; chip_t                   ; 4.543 ;       ;       ; 5.273 ;
+; S2         ; chip_w                   ; 5.154 ;       ;       ; 5.920 ;
+; S3         ; chip_dummy_led_output[0] ; 4.798 ; 5.302 ; 5.995 ; 5.275 ;
+; S3         ; chip_dummy_led_output[1] ; 5.107 ; 4.630 ; 5.364 ; 5.616 ;
+; S3         ; chip_dummy_led_output[2] ; 5.024 ; 4.855 ; 5.633 ; 5.447 ;
+; S3         ; chip_dummy_led_output[3] ; 4.834 ; 4.748 ; 5.404 ; 5.374 ;
+; S3         ; chip_t                   ;       ; 4.362 ; 4.872 ;       ;
+; S3         ; chip_w                   ;       ; 5.007 ; 5.481 ;       ;
+; S3         ; chip_x                   ; 4.325 ;       ;       ; 5.011 ;
+; a          ; chip_dummy_led_output[0] ; 4.834 ; 4.949 ; 5.613 ; 5.307 ;
+; a          ; chip_dummy_led_output[1] ; 4.983 ; 4.629 ; 5.356 ; 5.486 ;
+; a          ; chip_dummy_led_output[2] ; 4.986 ; 4.580 ; 5.317 ; 5.510 ;
+; a          ; chip_dummy_led_output[3] ; 4.604 ; 4.507 ; 5.231 ; 5.088 ;
+; a          ; gate_dummy_led_output[0] ;       ; 4.307 ; 5.003 ;       ;
+; a          ; gate_dummy_led_output[1] ; 4.372 ; 4.296 ; 4.973 ; 4.904 ;
+; a          ; gate_dummy_led_output[2] ;       ; 4.133 ; 4.796 ;       ;
+; a          ; gate_dummy_led_output[3] ; 4.341 ;       ;       ; 4.860 ;
+; a          ; gate_t                   ; 4.431 ;       ;       ; 5.147 ;
+; a          ; gate_u                   ;       ; 4.116 ; 4.785 ;       ;
+; a          ; gate_x                   ; 4.431 ;       ;       ; 5.148 ;
+; a          ; gate_y                   ; 5.140 ;       ;       ; 5.864 ;
+; a          ; gate_z                   ; 4.209 ;       ;       ; 4.873 ;
+; b          ; chip_dummy_led_output[0] ; 4.962 ; 4.608 ; 5.336 ; 5.415 ;
+; b          ; chip_dummy_led_output[1] ; 4.672 ; 4.841 ; 5.599 ; 5.155 ;
+; b          ; chip_dummy_led_output[2] ; 4.941 ; 4.941 ; 5.725 ; 5.380 ;
+; b          ; chip_dummy_led_output[3] ; 4.872 ; 4.719 ; 5.474 ; 5.376 ;
+; b          ; gate_dummy_led_output[0] ;       ; 4.517 ; 5.243 ;       ;
+; b          ; gate_dummy_led_output[1] ; 4.581 ; 4.509 ; 5.217 ; 5.126 ;
+; b          ; gate_dummy_led_output[2] ; 4.398 ;       ;       ; 4.956 ;
+; b          ; gate_dummy_led_output[3] ;       ; 4.462 ; 5.181 ;       ;
+; b          ; gate_t                   ; 4.639 ;       ;       ; 5.387 ;
+; b          ; gate_u                   ; 4.389 ; 4.325 ; 5.025 ; 4.941 ;
+; b          ; gate_v                   ; 4.420 ; 4.483 ; 5.039 ; 5.121 ;
+; b          ; gate_w                   ;       ; 4.527 ; 5.084 ;       ;
+; b          ; gate_x                   ; 4.641 ;       ;       ; 5.390 ;
+; b          ; gate_y                   ; 5.351 ;       ;       ; 6.106 ;
+; b          ; gate_z                   ; 4.421 ;       ;       ; 5.116 ;
+; c          ; chip_dummy_led_output[0] ; 5.162 ; 4.809 ; 5.566 ; 5.744 ;
+; c          ; chip_dummy_led_output[1] ; 5.014 ; 4.845 ; 5.644 ; 5.547 ;
+; c          ; chip_dummy_led_output[2] ; 5.133 ; 4.943 ; 5.733 ; 5.642 ;
+; c          ; chip_dummy_led_output[3] ; 4.856 ; 4.723 ; 5.479 ; 5.342 ;
+; c          ; gate_dummy_led_output[0] ; 4.657 ;       ;       ; 5.220 ;
+; c          ; gate_dummy_led_output[1] ; 4.596 ;       ;       ; 5.181 ;
+; c          ; gate_dummy_led_output[2] ;       ; 4.380 ; 5.114 ;       ;
+; c          ; gate_dummy_led_output[3] ;       ; 4.499 ; 5.250 ;       ;
+; c          ; gate_t                   ; 4.648 ;       ;       ; 5.423 ;
+; c          ; gate_u                   ;       ; 4.340 ; 5.061 ;       ;
+; c          ; gate_v                   ;       ; 4.529 ; 5.121 ;       ;
+; c          ; gate_w                   ; 4.474 ;       ;       ; 5.199 ;
+; c          ; gate_y                   ; 5.356 ;       ;       ; 6.152 ;
+; c          ; gate_z                   ; 4.425 ; 4.531 ; 5.127 ; 5.161 ;
+; d          ; chip_dummy_led_output[0] ; 4.828 ; 4.884 ; 5.650 ; 5.312 ;
+; d          ; chip_dummy_led_output[1] ; 5.091 ; 4.736 ; 5.515 ; 5.646 ;
+; d          ; chip_dummy_led_output[2] ; 4.873 ; 4.722 ; 5.498 ; 5.354 ;
+; d          ; chip_dummy_led_output[3] ; 4.658 ; 4.538 ; 5.283 ; 5.170 ;
+; d          ; gate_dummy_led_output[0] ; 4.523 ;       ;       ; 5.065 ;
+; d          ; gate_dummy_led_output[1] ; 4.484 ;       ;       ; 5.045 ;
+; d          ; gate_dummy_led_output[2] ; 4.353 ;       ;       ; 4.926 ;
+; d          ; gate_t                   ;       ; 4.670 ; 5.191 ;       ;
+; d          ; gate_u                   ; 4.307 ; 4.236 ; 4.935 ; 4.875 ;
+; d          ; gate_v                   ; 4.201 ; 4.269 ; 4.833 ; 4.894 ;
+; d          ; gate_w                   ;       ; 4.325 ; 4.893 ;       ;
+; d          ; gate_x                   ; 4.540 ;       ;       ; 5.293 ;
+; d          ; gate_y                   ; 5.248 ; 5.414 ; 5.933 ; 6.024 ;
+; d          ; gate_z                   ; 4.316 ;       ;       ; 5.032 ;
++------------+--------------------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Propagation Delay                                                         ;
++------------+--------------------------+--------+--------+--------+--------+
+; Input Port ; Output Port              ; RR     ; RF     ; FR     ; FF     ;
++------------+--------------------------+--------+--------+--------+--------+
+; S0         ; chip_dummy_led_output[0] ; 10.557 ; 10.942 ; 11.416 ; 11.137 ;
+; S0         ; chip_dummy_led_output[1] ; 10.779 ; 11.172 ; 11.638 ; 11.367 ;
+; S0         ; chip_dummy_led_output[2] ; 10.652 ; 10.964 ; 11.643 ; 11.141 ;
+; S0         ; chip_dummy_led_output[3] ; 10.850 ; 10.365 ; 10.966 ; 11.242 ;
+; S0         ; chip_t                   ; 8.342  ;        ;        ; 8.834  ;
+; S0         ; chip_x                   ; 8.408  ;        ;        ; 8.935  ;
+; S1         ; chip_dummy_led_output[0] ; 10.014 ; 10.803 ; 11.204 ; 10.545 ;
+; S1         ; chip_dummy_led_output[1] ; 10.236 ; 11.033 ; 11.426 ; 10.775 ;
+; S1         ; chip_dummy_led_output[2] ; 10.941 ; 10.498 ; 11.163 ; 11.267 ;
+; S1         ; chip_dummy_led_output[3] ; 10.244 ; 10.226 ; 10.790 ; 10.573 ;
+; S1         ; chip_t                   ; 7.876  ;        ;        ; 8.354  ;
+; S1         ; chip_w                   ;        ; 8.691  ; 9.079  ;        ;
+; S1         ; chip_x                   ; 7.797  ;        ;        ; 8.266  ;
+; S2         ; chip_dummy_led_output[0] ; 10.946 ; 10.719 ; 11.205 ; 11.546 ;
+; S2         ; chip_dummy_led_output[1] ; 11.168 ; 10.949 ; 11.427 ; 11.776 ;
+; S2         ; chip_dummy_led_output[2] ; 10.140 ; 11.009 ; 11.684 ; 10.641 ;
+; S2         ; chip_dummy_led_output[3] ; 10.532 ; 10.248 ; 10.987 ; 10.969 ;
+; S2         ; chip_t                   ; 8.119  ;        ;        ; 8.623  ;
+; S2         ; chip_w                   ; 8.821  ;        ;        ; 9.434  ;
+; S3         ; chip_dummy_led_output[0] ; 10.216 ; 10.555 ; 10.941 ; 10.714 ;
+; S3         ; chip_dummy_led_output[1] ; 10.438 ; 10.785 ; 11.163 ; 10.944 ;
+; S3         ; chip_dummy_led_output[2] ; 10.693 ; 9.652  ; 10.135 ; 11.004 ;
+; S3         ; chip_dummy_led_output[3] ; 10.169 ; 9.978  ; 10.527 ; 10.464 ;
+; S3         ; chip_t                   ;        ; 7.634  ; 8.114  ;        ;
+; S3         ; chip_w                   ;        ; 8.443  ; 8.816  ;        ;
+; S3         ; chip_x                   ; 7.727  ;        ;        ; 8.157  ;
+; a          ; chip_dummy_led_output[0] ; 9.603  ; 9.529  ; 10.016 ; 10.084 ;
+; a          ; chip_dummy_led_output[1] ; 9.825  ; 9.207  ; 9.646  ; 10.314 ;
+; a          ; chip_dummy_led_output[2] ; 10.056 ; 9.971  ; 10.497 ; 10.421 ;
+; a          ; chip_dummy_led_output[3] ; 10.254 ; 10.072 ; 10.695 ; 10.522 ;
+; a          ; gate_dummy_led_output[0] ;        ; 7.720  ; 8.111  ;        ;
+; a          ; gate_dummy_led_output[1] ; 7.634  ; 7.654  ; 8.076  ; 8.105  ;
+; a          ; gate_dummy_led_output[2] ;        ; 7.416  ; 7.829  ;        ;
+; a          ; gate_dummy_led_output[3] ; 7.587  ;        ;        ; 8.074  ;
+; a          ; gate_t                   ; 7.938  ;        ;        ; 8.357  ;
+; a          ; gate_u                   ;        ; 7.359  ; 7.783  ;        ;
+; a          ; gate_x                   ; 7.941  ;        ;        ; 8.376  ;
+; a          ; gate_y                   ; 8.770  ;        ;        ; 9.285  ;
+; a          ; gate_z                   ; 7.549  ;        ;        ; 7.953  ;
+; b          ; chip_dummy_led_output[0] ; 10.001 ; 9.785  ; 10.181 ; 10.500 ;
+; b          ; chip_dummy_led_output[1] ; 10.223 ; 10.015 ; 10.403 ; 10.730 ;
+; b          ; chip_dummy_led_output[2] ; 10.455 ; 9.806  ; 10.385 ; 10.802 ;
+; b          ; chip_dummy_led_output[3] ; 10.653 ; 9.208  ; 9.752  ; 10.903 ;
+; b          ; gate_dummy_led_output[0] ;        ; 8.119  ; 8.522  ;        ;
+; b          ; gate_dummy_led_output[1] ; 8.033  ; 8.055  ; 8.495  ; 8.484  ;
+; b          ; gate_dummy_led_output[2] ; 7.778  ;        ;        ; 8.237  ;
+; b          ; gate_dummy_led_output[3] ;        ; 8.019  ; 8.440  ;        ;
+; b          ; gate_t                   ; 8.334  ;        ;        ; 8.772  ;
+; b          ; gate_u                   ; 7.736  ; 7.755  ; 8.197  ; 8.186  ;
+; b          ; gate_v                   ; 7.942  ; 7.895  ; 8.374  ; 8.360  ;
+; b          ; gate_w                   ;        ; 7.986  ; 8.461  ;        ;
+; b          ; gate_x                   ; 8.338  ;        ;        ; 8.790  ;
+; b          ; gate_y                   ; 9.168  ;        ;        ; 9.701  ;
+; b          ; gate_z                   ; 7.948  ;        ;        ; 8.370  ;
+; c          ; chip_dummy_led_output[0] ; 10.091 ; 10.033 ; 10.584 ; 10.622 ;
+; c          ; chip_dummy_led_output[1] ; 10.313 ; 10.122 ; 10.545 ; 10.852 ;
+; c          ; chip_dummy_led_output[2] ; 10.536 ; 10.475 ; 11.065 ; 10.946 ;
+; c          ; chip_dummy_led_output[3] ; 10.734 ; 10.576 ; 11.263 ; 11.047 ;
+; c          ; gate_dummy_led_output[0] ; 8.186  ;        ;        ; 8.725  ;
+; c          ; gate_dummy_led_output[1] ; 8.161  ;        ;        ; 8.660  ;
+; c          ; gate_dummy_led_output[2] ;        ; 7.901  ; 8.416  ;        ;
+; c          ; gate_dummy_led_output[3] ;        ; 8.123  ; 8.612  ;        ;
+; c          ; gate_t                   ; 8.384  ;        ;        ; 8.884  ;
+; c          ; gate_u                   ;        ; 7.852  ; 8.373  ;        ;
+; c          ; gate_v                   ;        ; 8.035  ; 8.564  ;        ;
+; c          ; gate_w                   ; 8.073  ;        ;        ; 8.562  ;
+; c          ; gate_y                   ; 9.258  ;        ;        ; 9.823  ;
+; c          ; gate_z                   ; 7.984  ; 8.033  ; 8.561  ; 8.481  ;
+; d          ; chip_dummy_led_output[0] ; 9.872  ; 9.941  ; 10.393 ; 10.385 ;
+; d          ; chip_dummy_led_output[1] ; 10.035 ; 10.171 ; 10.615 ; 10.615 ;
+; d          ; chip_dummy_led_output[2] ; 10.353 ; 10.182 ; 10.769 ; 10.770 ;
+; d          ; chip_dummy_led_output[3] ; 10.551 ; 10.283 ; 10.967 ; 10.871 ;
+; d          ; gate_dummy_led_output[0] ; 7.973  ;        ;        ; 8.521  ;
+; d          ; gate_dummy_led_output[1] ; 7.918  ;        ;        ; 8.422  ;
+; d          ; gate_dummy_led_output[2] ; 7.695  ;        ;        ; 8.202  ;
+; d          ; gate_t                   ;        ; 8.223  ; 8.742  ;        ;
+; d          ; gate_u                   ; 7.643  ; 7.583  ; 8.073  ; 8.162  ;
+; d          ; gate_v                   ; 7.537  ; 7.493  ; 8.043  ; 7.990  ;
+; d          ; gate_w                   ;        ; 7.598  ; 8.145  ;        ;
+; d          ; gate_x                   ; 8.167  ;        ;        ; 8.683  ;
+; d          ; gate_y                   ; 8.980  ; 9.142  ; 9.560  ; 9.586  ;
+; d          ; gate_z                   ; 7.808  ;        ;        ; 8.261  ;
++------------+--------------------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Propagation Delay                                             ;
++------------+--------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port              ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------------------+-------+-------+-------+-------+
+; S0         ; chip_dummy_led_output[0] ; 5.016 ; 5.280 ; 6.102 ; 5.537 ;
+; S0         ; chip_dummy_led_output[1] ; 5.462 ; 4.839 ; 5.623 ; 6.029 ;
+; S0         ; chip_dummy_led_output[2] ; 5.484 ; 5.064 ; 5.892 ; 6.012 ;
+; S0         ; chip_dummy_led_output[3] ; 5.189 ; 5.568 ; 6.412 ; 5.787 ;
+; S0         ; chip_t                   ; 4.657 ;       ;       ; 5.401 ;
+; S0         ; chip_x                   ; 4.703 ;       ;       ; 5.463 ;
+; S1         ; chip_dummy_led_output[0] ; 5.324 ; 4.598 ; 5.334 ; 5.807 ;
+; S1         ; chip_dummy_led_output[1] ; 5.152 ; 5.191 ; 5.890 ; 5.677 ;
+; S1         ; chip_dummy_led_output[2] ; 5.120 ; 4.950 ; 5.752 ; 5.563 ;
+; S1         ; chip_dummy_led_output[3] ; 4.879 ; 4.949 ; 5.617 ; 5.435 ;
+; S1         ; chip_t                   ; 4.394 ;       ;       ; 5.077 ;
+; S1         ; chip_w                   ;       ; 5.103 ; 5.597 ;       ;
+; S1         ; chip_x                   ; 4.370 ;       ;       ; 5.072 ;
+; S2         ; chip_dummy_led_output[0] ; 5.746 ; 5.166 ; 5.974 ; 6.364 ;
+; S2         ; chip_dummy_led_output[1] ; 5.348 ; 5.527 ; 6.289 ; 5.866 ;
+; S2         ; chip_dummy_led_output[2] ; 5.370 ; 5.120 ; 5.937 ; 5.884 ;
+; S2         ; chip_dummy_led_output[3] ; 5.075 ; 5.454 ; 6.284 ; 5.659 ;
+; S2         ; chip_t                   ; 4.543 ;       ;       ; 5.273 ;
+; S2         ; chip_w                   ; 5.154 ;       ;       ; 5.920 ;
+; S3         ; chip_dummy_led_output[0] ; 4.798 ; 5.302 ; 5.995 ; 5.275 ;
+; S3         ; chip_dummy_led_output[1] ; 5.107 ; 4.630 ; 5.364 ; 5.616 ;
+; S3         ; chip_dummy_led_output[2] ; 5.024 ; 4.855 ; 5.633 ; 5.447 ;
+; S3         ; chip_dummy_led_output[3] ; 4.834 ; 4.748 ; 5.404 ; 5.374 ;
+; S3         ; chip_t                   ;       ; 4.362 ; 4.872 ;       ;
+; S3         ; chip_w                   ;       ; 5.007 ; 5.481 ;       ;
+; S3         ; chip_x                   ; 4.325 ;       ;       ; 5.011 ;
+; a          ; chip_dummy_led_output[0] ; 4.834 ; 4.949 ; 5.613 ; 5.307 ;
+; a          ; chip_dummy_led_output[1] ; 4.983 ; 4.629 ; 5.356 ; 5.486 ;
+; a          ; chip_dummy_led_output[2] ; 4.986 ; 4.580 ; 5.317 ; 5.510 ;
+; a          ; chip_dummy_led_output[3] ; 4.604 ; 4.507 ; 5.231 ; 5.088 ;
+; a          ; gate_dummy_led_output[0] ;       ; 4.307 ; 5.003 ;       ;
+; a          ; gate_dummy_led_output[1] ; 4.372 ; 4.296 ; 4.973 ; 4.904 ;
+; a          ; gate_dummy_led_output[2] ;       ; 4.133 ; 4.796 ;       ;
+; a          ; gate_dummy_led_output[3] ; 4.341 ;       ;       ; 4.860 ;
+; a          ; gate_t                   ; 4.431 ;       ;       ; 5.147 ;
+; a          ; gate_u                   ;       ; 4.116 ; 4.785 ;       ;
+; a          ; gate_x                   ; 4.431 ;       ;       ; 5.148 ;
+; a          ; gate_y                   ; 5.140 ;       ;       ; 5.864 ;
+; a          ; gate_z                   ; 4.209 ;       ;       ; 4.873 ;
+; b          ; chip_dummy_led_output[0] ; 4.962 ; 4.608 ; 5.336 ; 5.415 ;
+; b          ; chip_dummy_led_output[1] ; 4.672 ; 4.841 ; 5.599 ; 5.155 ;
+; b          ; chip_dummy_led_output[2] ; 4.941 ; 4.941 ; 5.725 ; 5.380 ;
+; b          ; chip_dummy_led_output[3] ; 4.872 ; 4.719 ; 5.474 ; 5.376 ;
+; b          ; gate_dummy_led_output[0] ;       ; 4.517 ; 5.243 ;       ;
+; b          ; gate_dummy_led_output[1] ; 4.581 ; 4.509 ; 5.217 ; 5.126 ;
+; b          ; gate_dummy_led_output[2] ; 4.398 ;       ;       ; 4.956 ;
+; b          ; gate_dummy_led_output[3] ;       ; 4.462 ; 5.181 ;       ;
+; b          ; gate_t                   ; 4.639 ;       ;       ; 5.387 ;
+; b          ; gate_u                   ; 4.389 ; 4.325 ; 5.025 ; 4.941 ;
+; b          ; gate_v                   ; 4.420 ; 4.483 ; 5.039 ; 5.121 ;
+; b          ; gate_w                   ;       ; 4.527 ; 5.084 ;       ;
+; b          ; gate_x                   ; 4.641 ;       ;       ; 5.390 ;
+; b          ; gate_y                   ; 5.351 ;       ;       ; 6.106 ;
+; b          ; gate_z                   ; 4.421 ;       ;       ; 5.116 ;
+; c          ; chip_dummy_led_output[0] ; 5.162 ; 4.809 ; 5.566 ; 5.744 ;
+; c          ; chip_dummy_led_output[1] ; 5.014 ; 4.845 ; 5.644 ; 5.547 ;
+; c          ; chip_dummy_led_output[2] ; 5.133 ; 4.943 ; 5.733 ; 5.642 ;
+; c          ; chip_dummy_led_output[3] ; 4.856 ; 4.723 ; 5.479 ; 5.342 ;
+; c          ; gate_dummy_led_output[0] ; 4.657 ;       ;       ; 5.220 ;
+; c          ; gate_dummy_led_output[1] ; 4.596 ;       ;       ; 5.181 ;
+; c          ; gate_dummy_led_output[2] ;       ; 4.380 ; 5.114 ;       ;
+; c          ; gate_dummy_led_output[3] ;       ; 4.499 ; 5.250 ;       ;
+; c          ; gate_t                   ; 4.648 ;       ;       ; 5.423 ;
+; c          ; gate_u                   ;       ; 4.340 ; 5.061 ;       ;
+; c          ; gate_v                   ;       ; 4.529 ; 5.121 ;       ;
+; c          ; gate_w                   ; 4.474 ;       ;       ; 5.199 ;
+; c          ; gate_y                   ; 5.356 ;       ;       ; 6.152 ;
+; c          ; gate_z                   ; 4.425 ; 4.531 ; 5.127 ; 5.161 ;
+; d          ; chip_dummy_led_output[0] ; 4.828 ; 4.884 ; 5.650 ; 5.312 ;
+; d          ; chip_dummy_led_output[1] ; 5.091 ; 4.736 ; 5.515 ; 5.646 ;
+; d          ; chip_dummy_led_output[2] ; 4.873 ; 4.722 ; 5.498 ; 5.354 ;
+; d          ; chip_dummy_led_output[3] ; 4.658 ; 4.538 ; 5.283 ; 5.170 ;
+; d          ; gate_dummy_led_output[0] ; 4.523 ;       ;       ; 5.065 ;
+; d          ; gate_dummy_led_output[1] ; 4.484 ;       ;       ; 5.045 ;
+; d          ; gate_dummy_led_output[2] ; 4.353 ;       ;       ; 4.926 ;
+; d          ; gate_t                   ;       ; 4.670 ; 5.191 ;       ;
+; d          ; gate_u                   ; 4.307 ; 4.236 ; 4.935 ; 4.875 ;
+; d          ; gate_v                   ; 4.201 ; 4.269 ; 4.833 ; 4.894 ;
+; d          ; gate_w                   ;       ; 4.325 ; 4.893 ;       ;
+; d          ; gate_x                   ; 4.540 ;       ;       ; 5.293 ;
+; d          ; gate_y                   ; 5.248 ; 5.414 ; 5.933 ; 6.024 ;
+; d          ; gate_z                   ; 4.316 ;       ;       ; 5.032 ;
++------------+--------------------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                               ;
++--------------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin                      ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; gate_t                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_u                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_v                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_w                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_x                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_y                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_z                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_w                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_x                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_t                   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_dummy_led_output[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_dummy_led_output[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_dummy_led_output[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; chip_dummy_led_output[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_dummy_led_output[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_dummy_led_output[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_dummy_led_output[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; gate_dummy_led_output[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; a                       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; c                       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; b                       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; d                       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; S2                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; S3                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; S1                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; S0                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                      ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; gate_t                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; gate_u                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; gate_v                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; gate_w                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; gate_x                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; gate_y                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.33 V              ; -0.00616 V          ; 0.191 V                              ; 0.099 V                              ; 2.83e-09 s                  ; 2.56e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.33 V             ; -0.00616 V         ; 0.191 V                             ; 0.099 V                             ; 2.83e-09 s                 ; 2.56e-09 s                 ; No                        ; Yes                       ;
+; gate_z                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; chip_w                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.33 V              ; -0.00624 V          ; 0.185 V                              ; 0.097 V                              ; 2.82e-09 s                  ; 2.56e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.33 V             ; -0.00624 V         ; 0.185 V                             ; 0.097 V                             ; 2.82e-09 s                 ; 2.56e-09 s                 ; No                        ; Yes                       ;
+; chip_x                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; chip_t                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.45e-09 V                   ; 2.38 V              ; -0.0609 V           ; 0.148 V                              ; 0.095 V                              ; 2.82e-10 s                  ; 2.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.45e-09 V                  ; 2.38 V             ; -0.0609 V          ; 0.148 V                             ; 0.095 V                             ; 2.82e-10 s                 ; 2.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.61e-09 V                   ; 2.38 V              ; -0.00274 V          ; 0.141 V                              ; 0.006 V                              ; 4.7e-10 s                   ; 6.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.61e-09 V                  ; 2.38 V             ; -0.00274 V         ; 0.141 V                             ; 0.006 V                             ; 4.7e-10 s                  ; 6.02e-10 s                 ; Yes                       ; Yes                       ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                      ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; gate_t                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; gate_u                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; gate_v                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; gate_w                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; gate_x                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; gate_y                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.33 V              ; -0.00344 V          ; 0.134 V                              ; 0.075 V                              ; 3.33e-09 s                  ; 3.16e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.33 V             ; -0.00344 V         ; 0.134 V                             ; 0.075 V                             ; 3.33e-09 s                 ; 3.16e-09 s                 ; Yes                       ; Yes                       ;
+; gate_z                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; chip_w                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.33 V              ; -0.00349 V          ; 0.163 V                              ; 0.074 V                              ; 3.33e-09 s                  ; 3.14e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.33 V             ; -0.00349 V         ; 0.163 V                             ; 0.074 V                             ; 3.33e-09 s                 ; 3.14e-09 s                 ; Yes                       ; Yes                       ;
+; chip_x                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; chip_t                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.74e-07 V                   ; 2.36 V              ; -0.0201 V           ; 0.072 V                              ; 0.033 V                              ; 4.04e-10 s                  ; 3.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.74e-07 V                  ; 2.36 V             ; -0.0201 V          ; 0.072 V                             ; 0.033 V                             ; 4.04e-10 s                 ; 3.29e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.45e-07 V                   ; 2.35 V              ; -0.00643 V          ; 0.081 V                              ; 0.031 V                              ; 5.31e-10 s                  ; 7.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.45e-07 V                  ; 2.35 V             ; -0.00643 V         ; 0.081 V                             ; 0.031 V                             ; 5.31e-10 s                 ; 7.59e-10 s                 ; Yes                       ; Yes                       ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                      ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; gate_t                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; gate_u                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; gate_v                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; gate_w                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; gate_x                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; gate_y                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; gate_z                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; chip_w                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.64 V              ; -0.0117 V           ; 0.202 V                              ; 0.176 V                              ; 2.38e-09 s                  ; 2.22e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.64 V             ; -0.0117 V          ; 0.202 V                             ; 0.176 V                             ; 2.38e-09 s                 ; 2.22e-09 s                 ; No                        ; Yes                       ;
+; chip_x                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; chip_t                   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; chip_dummy_led_output[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; chip_dummy_led_output[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; gate_dummy_led_output[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; gate_dummy_led_output[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++--------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 82    ; 82   ;
+; Unconstrained Output Ports      ; 18    ; 18   ;
+; Unconstrained Output Port Paths ; 82    ; 82   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Mar 14 20:21:58 2015
+Info: Command: quartus_sta basicmoduleP1 -c basicmoduleP1
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'basicmoduleP1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 428 megabytes
+    Info: Processing ended: Sat Mar 14 20:22:02 2015
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

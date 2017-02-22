@@ -1,0 +1,1333 @@
+|DP2_Spring2015
+LED[0] <= your_ALU_mux:inst1.your_out[0]
+LED[1] <= your_ALU_mux:inst1.your_out[1]
+LED[2] <= your_ALU_mux:inst1.your_out[2]
+LED[3] <= your_ALU_mux:inst1.your_out[3]
+LED[4] <= your_ALU_mux:inst1.your_out[4]
+LED[5] <= your_ALU_mux:inst1.your_out[5]
+LED[6] <= your_ALU_mux:inst1.your_out[6]
+LED[7] <= your_ALU_mux:inst1.your_out[7]
+CLOCK_50 => address_counter:inst.clock
+CLOCK_50 => single_port_rom:inst2.clk
+KEY[0] => address_counter:inst.reset
+KEY[1] => address_counter:inst.enable
+SW[0] => your_ALU_mux:inst1.switches[0]
+SW[1] => your_ALU_mux:inst1.switches[1]
+SW[2] => your_ALU_mux:inst1.switches[2]
+SW[3] => your_ALU_mux:inst1.switches[3]
+
+
+|DP2_Spring2015|your_ALU_mux:inst1
+your_out[0] <= mux16_1_8bits:MY_MUX.port0
+your_out[1] <= mux16_1_8bits:MY_MUX.port0
+your_out[2] <= mux16_1_8bits:MY_MUX.port0
+your_out[3] <= mux16_1_8bits:MY_MUX.port0
+your_out[4] <= mux16_1_8bits:MY_MUX.port0
+your_out[5] <= mux16_1_8bits:MY_MUX.port0
+your_out[6] <= mux16_1_8bits:MY_MUX.port0
+your_out[7] <= mux16_1_8bits:MY_MUX.port0
+operandA[0] => operandA[0].IN2
+operandA[1] => operandA[1].IN2
+operandA[2] => operandA[2].IN2
+operandA[3] => operandA[3].IN2
+operandA[4] => operandA[4].IN2
+operandA[5] => operandA[5].IN2
+operandA[6] => operandA[6].IN2
+operandA[7] => operandA[7].IN2
+operandB[0] => operandB[0].IN2
+operandB[1] => operandB[1].IN2
+operandB[2] => operandB[2].IN2
+operandB[3] => operandB[3].IN2
+operandB[4] => operandB[4].IN2
+operandB[5] => operandB[5].IN2
+operandB[6] => operandB[6].IN2
+operandB[7] => operandB[7].IN2
+opcode[0] => opcode[0].IN2
+opcode[1] => opcode[1].IN2
+opcode[2] => opcode[2].IN2
+opcode[3] => opcode[3].IN2
+switches[0] => switches[0].IN1
+switches[1] => switches[1].IN1
+switches[2] => switches[2].IN1
+switches[3] => switches[3].IN1
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19
+operandA[0] => operandA[0].IN11
+operandA[1] => operandA[1].IN11
+operandA[2] => operandA[2].IN11
+operandA[3] => operandA[3].IN11
+operandA[4] => operandA[4].IN11
+operandA[5] => operandA[5].IN11
+operandA[6] => operandA[6].IN11
+operandA[7] => operandA[7].IN11
+operandB[0] => operandB[0].IN3
+operandB[1] => operandB[1].IN3
+operandB[2] => operandB[2].IN3
+operandB[3] => operandB[3].IN3
+operandB[4] => operandB[4].IN3
+operandB[5] => operandB[5].IN3
+operandB[6] => operandB[6].IN3
+operandB[7] => operandB[7].IN3
+opcode[0] => Equal0.IN3
+opcode[0] => Equal1.IN0
+opcode[0] => Equal2.IN3
+opcode[0] => Equal3.IN1
+opcode[0] => Equal4.IN3
+opcode[0] => Equal5.IN1
+opcode[0] => Equal6.IN3
+opcode[0] => Equal7.IN2
+opcode[0] => Equal8.IN3
+opcode[0] => Equal9.IN1
+opcode[0] => Equal10.IN3
+opcode[0] => Equal11.IN2
+opcode[1] => Equal0.IN2
+opcode[1] => Equal1.IN3
+opcode[1] => Equal2.IN0
+opcode[1] => Equal3.IN0
+opcode[1] => Equal4.IN2
+opcode[1] => Equal5.IN3
+opcode[1] => Equal6.IN1
+opcode[1] => Equal7.IN1
+opcode[1] => Equal8.IN2
+opcode[1] => Equal9.IN3
+opcode[1] => Equal10.IN1
+opcode[1] => Equal11.IN1
+opcode[2] => Equal0.IN1
+opcode[2] => Equal1.IN2
+opcode[2] => Equal2.IN2
+opcode[2] => Equal3.IN3
+opcode[2] => Equal4.IN0
+opcode[2] => Equal5.IN0
+opcode[2] => Equal6.IN0
+opcode[2] => Equal7.IN0
+opcode[2] => Equal8.IN1
+opcode[2] => Equal9.IN2
+opcode[2] => Equal10.IN2
+opcode[2] => Equal11.IN3
+opcode[3] => Equal0.IN0
+opcode[3] => Equal1.IN1
+opcode[3] => Equal2.IN1
+opcode[3] => Equal3.IN2
+opcode[3] => Equal4.IN1
+opcode[3] => Equal5.IN2
+opcode[3] => Equal6.IN2
+opcode[3] => Equal7.IN3
+opcode[3] => Equal8.IN0
+opcode[3] => Equal9.IN0
+opcode[3] => Equal10.IN0
+opcode[3] => Equal11.IN0
+your_out[0] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[1] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[2] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[3] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[4] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[5] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[6] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+your_out[7] <= your_out.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+N <= N.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+Cin => Cin.IN1
+result_add[0] <= adder1bit:add0.port3
+result_add[1] <= adder1bit:add1.port3
+result_add[2] <= adder1bit:add2.port3
+result_add[3] <= adder1bit:add3.port3
+result_add[4] <= adder1bit:add4.port3
+result_add[5] <= adder1bit:add5.port3
+result_add[6] <= adder1bit:add6.port3
+result_add[7] <= adder1bit:add7.port3
+Cout_add <= adder1bit:add7.port4
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= adder1bit:add7.port3
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add0
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add1
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add2
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add3
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add4
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add5
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add6
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:add_op|adder1bit:add7
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+Cin => Cin.IN1
+result_add[0] <= adder1bit:add0.port3
+result_add[1] <= adder1bit:add1.port3
+result_add[2] <= adder1bit:add2.port3
+result_add[3] <= adder1bit:add3.port3
+result_add[4] <= adder1bit:add4.port3
+result_add[5] <= adder1bit:add5.port3
+result_add[6] <= adder1bit:add6.port3
+result_add[7] <= adder1bit:add7.port3
+Cout_add <= adder1bit:add7.port4
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= adder1bit:add7.port3
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add0
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add1
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add2
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add3
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add4
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add5
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add6
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:sub_op|adder1bit:add7
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+Cin => Cin.IN1
+result_add[0] <= adder1bit:add0.port3
+result_add[1] <= adder1bit:add1.port3
+result_add[2] <= adder1bit:add2.port3
+result_add[3] <= adder1bit:add3.port3
+result_add[4] <= adder1bit:add4.port3
+result_add[5] <= adder1bit:add5.port3
+result_add[6] <= adder1bit:add6.port3
+result_add[7] <= adder1bit:add7.port3
+Cout_add <= adder1bit:add7.port4
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= adder1bit:add7.port3
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add0
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add1
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add2
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add3
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add4
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add5
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add6
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:inc_op|adder1bit:add7
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+Cin => Cin.IN1
+result_add[0] <= adder1bit:add0.port3
+result_add[1] <= adder1bit:add1.port3
+result_add[2] <= adder1bit:add2.port3
+result_add[3] <= adder1bit:add3.port3
+result_add[4] <= adder1bit:add4.port3
+result_add[5] <= adder1bit:add5.port3
+result_add[6] <= adder1bit:add6.port3
+result_add[7] <= adder1bit:add7.port3
+Cout_add <= adder1bit:add7.port4
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= adder1bit:add7.port3
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add0
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add1
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add2
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add3
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add4
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add5
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add6
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:dec_op|adder1bit:add7
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+Cin => Cin.IN1
+result_add[0] <= adder1bit:add0.port3
+result_add[1] <= adder1bit:add1.port3
+result_add[2] <= adder1bit:add2.port3
+result_add[3] <= adder1bit:add3.port3
+result_add[4] <= adder1bit:add4.port3
+result_add[5] <= adder1bit:add5.port3
+result_add[6] <= adder1bit:add6.port3
+result_add[7] <= adder1bit:add7.port3
+Cout_add <= adder1bit:add7.port4
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= adder1bit:add7.port3
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add0
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add1
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add2
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add3
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add4
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add5
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add6
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|addition_adder:neg_op|adder1bit:add7
+A => A1.IN0
+A => A2.IN0
+A => X1.IN0
+B => A1.IN1
+B => A3.IN0
+B => X1.IN1
+Cin => A2.IN1
+Cin => A3.IN1
+Cin => X1.IN2
+result_add <= X1.DB_MAX_OUTPUT_PORT_TYPE
+Cout_add <= O1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|bit_and:ba_op
+A[0] => result_and.IN0
+A[1] => result_and.IN0
+A[2] => result_and.IN0
+A[3] => result_and.IN0
+A[4] => result_and.IN0
+A[5] => result_and.IN0
+A[6] => result_and.IN0
+A[7] => result_and.IN0
+B[0] => result_and.IN1
+B[1] => result_and.IN1
+B[2] => result_and.IN1
+B[3] => result_and.IN1
+B[4] => result_and.IN1
+B[5] => result_and.IN1
+B[6] => result_and.IN1
+B[7] => result_and.IN1
+result_and[0] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[1] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[2] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[3] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[4] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[5] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[6] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[7] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|bit_xor:bo_op
+A[0] => result_xor.IN0
+A[1] => result_xor.IN0
+A[2] => result_xor.IN0
+A[3] => result_xor.IN0
+A[4] => result_xor.IN0
+A[5] => result_xor.IN0
+A[6] => result_xor.IN0
+A[7] => result_xor.IN0
+B[0] => result_xor.IN1
+B[1] => result_xor.IN1
+B[2] => result_xor.IN1
+B[3] => result_xor.IN1
+B[4] => result_xor.IN1
+B[5] => result_xor.IN1
+B[6] => result_xor.IN1
+B[7] => result_xor.IN1
+result_xor[0] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[1] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[2] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[3] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[4] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[5] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[6] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result_xor[7] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|bit_not:bn_op
+A[0] => result_not[0].DATAIN
+A[0] => Equal0.IN7
+A[1] => result_not[1].DATAIN
+A[1] => Equal0.IN6
+A[2] => result_not[2].DATAIN
+A[2] => Equal0.IN5
+A[3] => result_not[3].DATAIN
+A[3] => Equal0.IN4
+A[4] => result_not[4].DATAIN
+A[4] => Equal0.IN3
+A[5] => result_not[5].DATAIN
+A[5] => Equal0.IN2
+A[6] => result_not[6].DATAIN
+A[6] => Equal0.IN1
+A[7] => result_not[7].DATAIN
+A[7] => N.DATAIN
+A[7] => Equal0.IN0
+result_not[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+result_not[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+result_not[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+result_not[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+result_not[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+result_not[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+result_not[6] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+result_not[7] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|division4:div_op
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => result_div[0].DATAIN
+A[2] => Equal0.IN8
+A[3] => result_div[1].DATAIN
+A[3] => Equal0.IN7
+A[4] => result_div[2].DATAIN
+A[4] => Equal0.IN6
+A[5] => result_div[3].DATAIN
+A[5] => Equal0.IN5
+A[6] => result_div[4].DATAIN
+A[6] => Equal0.IN4
+A[7] => result_div[5].DATAIN
+A[7] => Equal0.IN3
+result_div[0] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+result_div[1] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+result_div[2] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+result_div[3] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+result_div[4] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+result_div[5] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+result_div[6] <= <GND>
+result_div[7] <= <GND>
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= <GND>
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+mod_2[0] => mod_2[0].IN1
+mod_2[1] => mod_2[1].IN1
+mod_2[2] => mod_2[2].IN1
+mod_2[3] => mod_2[3].IN1
+mod_2[4] => mod_2[4].IN1
+mod_2[5] => mod_2[5].IN1
+mod_2[6] => mod_2[6].IN1
+mod_2[7] => mod_2[7].IN1
+result_mod[0] <= bit_and:mask.port2
+result_mod[1] <= bit_and:mask.port2
+result_mod[2] <= bit_and:mask.port2
+result_mod[3] <= bit_and:mask.port2
+result_mod[4] <= bit_and:mask.port2
+result_mod[5] <= bit_and:mask.port2
+result_mod[6] <= bit_and:mask.port2
+result_mod[7] <= bit_and:mask.port2
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= bit_and:mask.port2
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|modulate:mod_op|bit_and:mask
+A[0] => result_and.IN0
+A[1] => result_and.IN0
+A[2] => result_and.IN0
+A[3] => result_and.IN0
+A[4] => result_and.IN0
+A[5] => result_and.IN0
+A[6] => result_and.IN0
+A[7] => result_and.IN0
+B[0] => result_and.IN1
+B[1] => result_and.IN1
+B[2] => result_and.IN1
+B[3] => result_and.IN1
+B[4] => result_and.IN1
+B[5] => result_and.IN1
+B[6] => result_and.IN1
+B[7] => result_and.IN1
+result_and[0] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[1] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[2] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[3] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[4] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[5] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[6] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result_and[7] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+N <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|cll:circle_l
+A[0] => result_cll[1].DATAIN
+A[1] => result_cll[2].DATAIN
+A[2] => result_cll[3].DATAIN
+A[3] => result_cll[4].DATAIN
+A[4] => result_cll[5].DATAIN
+A[5] => result_cll[6].DATAIN
+A[6] => result_cll[7].DATAIN
+A[7] => result_cll[0].DATAIN
+result_cll[0] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[1] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[2] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[3] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[4] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[5] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[6] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+result_cll[7] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+Z <= <GND>
+N <= <GND>
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|ALU:comb_19|clr:circle_r
+A[0] => result_clr[7].DATAIN
+A[1] => result_clr[0].DATAIN
+A[2] => result_clr[1].DATAIN
+A[3] => result_clr[2].DATAIN
+A[4] => result_clr[3].DATAIN
+A[5] => result_clr[4].DATAIN
+A[6] => result_clr[5].DATAIN
+A[7] => result_clr[6].DATAIN
+result_clr[0] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[1] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[2] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[3] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[4] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[5] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[6] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+result_clr[7] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+Z <= <GND>
+N <= <GND>
+C <= <GND>
+V <= <GND>
+
+
+|DP2_Spring2015|your_ALU_mux:inst1|mux16_1_8bits:MY_MUX
+mux_out[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+mux_out[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+select[0] => Mux0.IN3
+select[0] => Mux1.IN3
+select[0] => Mux2.IN3
+select[0] => Mux3.IN3
+select[0] => Mux4.IN3
+select[0] => Mux5.IN3
+select[0] => Mux6.IN3
+select[0] => Mux7.IN3
+select[1] => Mux0.IN2
+select[1] => Mux1.IN2
+select[1] => Mux2.IN2
+select[1] => Mux3.IN2
+select[1] => Mux4.IN2
+select[1] => Mux5.IN2
+select[1] => Mux6.IN2
+select[1] => Mux7.IN2
+select[2] => Mux0.IN1
+select[2] => Mux1.IN1
+select[2] => Mux2.IN1
+select[2] => Mux3.IN1
+select[2] => Mux4.IN1
+select[2] => Mux5.IN1
+select[2] => Mux6.IN1
+select[2] => Mux7.IN1
+select[3] => Mux0.IN0
+select[3] => Mux1.IN0
+select[3] => Mux2.IN0
+select[3] => Mux3.IN0
+select[3] => Mux4.IN0
+select[3] => Mux5.IN0
+select[3] => Mux6.IN0
+select[3] => Mux7.IN0
+i15[0] => Mux7.IN4
+i15[1] => Mux6.IN4
+i15[2] => Mux5.IN4
+i15[3] => Mux4.IN4
+i15[4] => Mux3.IN4
+i15[5] => Mux2.IN4
+i15[6] => Mux1.IN4
+i15[7] => Mux0.IN4
+i14[0] => Mux7.IN5
+i14[1] => Mux6.IN5
+i14[2] => Mux5.IN5
+i14[3] => Mux4.IN5
+i14[4] => Mux3.IN5
+i14[5] => Mux2.IN5
+i14[6] => Mux1.IN5
+i14[7] => Mux0.IN5
+i13[0] => Mux7.IN6
+i13[1] => Mux6.IN6
+i13[2] => Mux5.IN6
+i13[3] => Mux4.IN6
+i13[4] => Mux3.IN6
+i13[5] => Mux2.IN6
+i13[6] => Mux1.IN6
+i13[7] => Mux0.IN6
+i12[0] => Mux7.IN7
+i12[1] => Mux6.IN7
+i12[2] => Mux5.IN7
+i12[3] => Mux4.IN7
+i12[4] => Mux3.IN7
+i12[5] => Mux2.IN7
+i12[6] => Mux1.IN7
+i12[7] => Mux0.IN7
+i11[0] => Mux7.IN8
+i11[1] => Mux6.IN8
+i11[2] => Mux5.IN8
+i11[3] => Mux4.IN8
+i11[4] => Mux3.IN8
+i11[5] => Mux2.IN8
+i11[6] => Mux1.IN8
+i11[7] => Mux0.IN8
+i10[0] => Mux7.IN9
+i10[1] => Mux6.IN9
+i10[2] => Mux5.IN9
+i10[3] => Mux4.IN9
+i10[4] => Mux3.IN9
+i10[5] => Mux2.IN9
+i10[6] => Mux1.IN9
+i10[7] => Mux0.IN9
+i9[0] => Mux7.IN10
+i9[1] => Mux6.IN10
+i9[2] => Mux5.IN10
+i9[3] => Mux4.IN10
+i9[4] => Mux3.IN10
+i9[5] => Mux2.IN10
+i9[6] => Mux1.IN10
+i9[7] => Mux0.IN10
+i8[0] => Mux7.IN11
+i8[1] => Mux6.IN11
+i8[2] => Mux5.IN11
+i8[3] => Mux4.IN11
+i8[4] => Mux3.IN11
+i8[5] => Mux2.IN11
+i8[6] => Mux1.IN11
+i8[7] => Mux0.IN11
+i7[0] => Mux7.IN12
+i7[1] => Mux6.IN12
+i7[2] => Mux5.IN12
+i7[3] => Mux4.IN12
+i7[4] => Mux3.IN12
+i7[5] => Mux2.IN12
+i7[6] => Mux1.IN12
+i7[7] => Mux0.IN12
+i6[0] => Mux7.IN13
+i6[1] => Mux6.IN13
+i6[2] => Mux5.IN13
+i6[3] => Mux4.IN13
+i6[4] => Mux3.IN13
+i6[5] => Mux2.IN13
+i6[6] => Mux1.IN13
+i6[7] => Mux0.IN13
+i5[0] => Mux7.IN14
+i5[1] => Mux6.IN14
+i5[2] => Mux5.IN14
+i5[3] => Mux4.IN14
+i5[4] => Mux3.IN14
+i5[5] => Mux2.IN14
+i5[6] => Mux1.IN14
+i5[7] => Mux0.IN14
+i4[0] => Mux7.IN15
+i4[1] => Mux6.IN15
+i4[2] => Mux5.IN15
+i4[3] => Mux4.IN15
+i4[4] => Mux3.IN15
+i4[5] => Mux2.IN15
+i4[6] => Mux1.IN15
+i4[7] => Mux0.IN15
+i3[0] => Mux7.IN16
+i3[1] => Mux6.IN16
+i3[2] => Mux5.IN16
+i3[3] => Mux4.IN16
+i3[4] => Mux3.IN16
+i3[5] => Mux2.IN16
+i3[6] => Mux1.IN16
+i3[7] => Mux0.IN16
+i2[0] => Mux7.IN17
+i2[1] => Mux6.IN17
+i2[2] => Mux5.IN17
+i2[3] => Mux4.IN17
+i2[4] => Mux3.IN17
+i2[5] => Mux2.IN17
+i2[6] => Mux1.IN17
+i2[7] => Mux0.IN17
+i1[0] => Mux7.IN18
+i1[1] => Mux6.IN18
+i1[2] => Mux5.IN18
+i1[3] => Mux4.IN18
+i1[4] => Mux3.IN18
+i1[5] => Mux2.IN18
+i1[6] => Mux1.IN18
+i1[7] => Mux0.IN18
+i0[0] => Mux7.IN19
+i0[1] => Mux6.IN19
+i0[2] => Mux5.IN19
+i0[3] => Mux4.IN19
+i0[4] => Mux3.IN19
+i0[5] => Mux2.IN19
+i0[6] => Mux1.IN19
+i0[7] => Mux0.IN19
+
+
+|DP2_Spring2015|address_counter:inst
+clock => counter[0].CLK
+clock => counter[1].CLK
+clock => counter[2].CLK
+clock => counter[3].CLK
+clock => key_state~1.DATAIN
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => key_state~3.DATAIN
+enable => next_key_state.OUTPUTSELECT
+enable => next_key_state.OUTPUTSELECT
+enable => next_key_state.OUTPUTSELECT
+enable => next_key_state.OUTPUTSELECT
+enable => next_key_state.OUTPUTSELECT
+enable => next_key_state.OUTPUTSELECT
+counter_out[0] <= counter[0].DB_MAX_OUTPUT_PORT_TYPE
+counter_out[1] <= counter[1].DB_MAX_OUTPUT_PORT_TYPE
+counter_out[2] <= counter[2].DB_MAX_OUTPUT_PORT_TYPE
+counter_out[3] <= counter[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DP2_Spring2015|single_port_rom:inst2
+addr[0] => rom.RADDR
+addr[1] => rom.RADDR1
+addr[2] => rom.RADDR2
+addr[3] => rom.RADDR3
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clk => q[8]~reg0.CLK
+clk => q[9]~reg0.CLK
+clk => q[10]~reg0.CLK
+clk => q[11]~reg0.CLK
+clk => q[12]~reg0.CLK
+clk => q[13]~reg0.CLK
+clk => q[14]~reg0.CLK
+clk => q[15]~reg0.CLK
+clk => q[16]~reg0.CLK
+clk => q[17]~reg0.CLK
+clk => q[18]~reg0.CLK
+clk => q[19]~reg0.CLK
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

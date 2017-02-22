@@ -1,0 +1,27 @@
+Quartus II Archive log --	D:/Dropbox/Dropbox/ECE 2504/dp4_zhaonew.qarlog
+
+Archive:	D:/Dropbox/Dropbox/ECE 2504/dp4_zhaonew.qar
+Date:		Tue May 05 16:00:31 2015
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_ECE2504.SDC
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_ECE2504.qpf
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_ECE2504.qsf
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_ECE2504.v
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_Fall2012.SDC
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_Fall2012.qsf
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/DP4_Fall2012_assignment_defaults.qdf
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/Waveform.vwf
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/assignment_defaults.qdf
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/data.txt
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/db/DP4_ECE2504.cmp.hdb
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/db/DP4_ECE2504.db_info
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/incremental_db/compiled_partitions/DP4_ECE2504.db_info
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/instruction.txt
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/starter_program.txt
+C:/Users/Bowei/Desktop/ECE2504/DP4_ECE2504_restored/tom2-cpu-start-waveform-longer-5us.vwf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
